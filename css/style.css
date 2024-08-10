@@ -1144,6 +1144,18 @@ header .parent .cat_1 *:not(.owl-dots, .owl-dots *) {
 /* -------- breadcrumb -------- */
 .breadcrumb {
    font-weight: 500;
+   border-radius: 18px;
+   border: 1px dashed var(--sky);
+   background: linear-gradient(to right, rgba(237, 251, 250, 0) 0%, #EDFBFA 100%);
+   box-shadow: 0px 14px 30px #0000001a;
+   padding: 4rem;
+   margin-bottom: 4rem;
+   position: relative;
+}
+.breadcrumb-wrapper img{
+   position: absolute;
+   bottom: -8px;
+   inset-inline-end: 0;
 }
 
 .breadcrumb-item a {
