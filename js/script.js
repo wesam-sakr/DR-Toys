@@ -116,6 +116,14 @@ $(document).ready(function () {
     rtl: dirAr
   });
 
+  // FLICKITY SLIDER -> PRODUCT PAGE
+  $('.carousel-main').flickity();
+  $('.carousel-nav').flickity({
+      asNavFor: '.carousel-main',
+      contain: true,
+      pageDots: false
+  });
+
 
   $(".add-address").click(function () {
     if ($(".form-address").css("display") == "block") {

@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/css/intlTelInput.css" />
+  <link rel="stylesheet" href="css/flickity.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -168,6 +168,122 @@
         </ol>
       </nav>
   </div>
+
+
+  <section class="product_details">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="" >
+            <!-- Flickity HTML init -->
+            <div class="carousel carousel-main" data-flickity>
+                <div class="carousel-cell">
+                    <img src="images/product_01.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/product_03.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/product_04.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/product_05.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/product_06.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/product_09.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/product_17.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/product_18.png" alt="">
+                </div>
+            </div>
+            
+            <div class="carousel carousel-nav"
+                data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+              <div class="carousel-cell">
+                <img src="images/product_01.png" alt="">
+              </div>
+              <div class="carousel-cell">
+                  <img src="images/product_03.png" alt="">
+              </div>
+              <div class="carousel-cell">
+                  <img src="images/product_04.png" alt="">
+              </div>
+              <div class="carousel-cell">
+                  <img src="images/product_05.png" alt="">
+              </div>
+              <div class="carousel-cell">
+                  <img src="images/product_06.png" alt="">
+              </div>
+              <div class="carousel-cell">
+                  <img src="images/product_09.png" alt="">
+              </div>
+              <div class="carousel-cell">
+                  <img src="images/product_17.png" alt="">
+              </div>
+              <div class="carousel-cell">
+                  <img src="images/product_18.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="cart-product-item bg-transparent">
+                <div class="col-12">
+                    <div class="cart-product-name d-flex justify-content-between align-items-center mb-3">
+                      <h5>Regular Succulent Shebang</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn py-2 rounded"><i class="far fa-heart" style="color: #000;"></i></button>
+                      </div>
+                    </div>
+                    <div id="rateYo" class="mb-3" rateYo="3"></div>
+                    <p class="product-preview">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit blanditiis officia quibusdam repellat eligendi praesentium id iste, velit voluptas! Fuga aut tenetur in. Sunt consectetur ipsa provident dolor voluptate numquam dolore aut? Neque ratione hic expedita, architecto voluptatibus voluptates.
+                    </p>
+                    <ul class="plant-care">
+                        <li>
+                            <img src="images/watering.png" alt="">
+                            <div>
+                                <h5>irrigation</h5>
+                                <p>The plant is not irrigated until the soil is partially dry, and it is preferable to spray its leaves with water mist constantly, as it is moisture-loving.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/plant (1).png" alt="">
+                            <div>
+                                <h5>lighting</h5>
+                                <p>The plant needs bright to medium light such as window light or artificial room lighting.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/temperature.png" alt="">
+                            <div>
+                                <h5>temperature</h5>
+                                <p>The plant needs a moderate atmosphere that is suitable for normal room temperature up to 25°C.</p>
+                            </div>
+                            <span></span>
+                        </li>
+                    </ul>
+                    <div class="product-info">
+                        <span class="full-price"><span id="price">250</span> $</span>
+                        <div class="product-quantity">
+                            <a href="javascript:void(0);"onclick="add()" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
+                            <input type='text' name='quantity' value='1' class='qty' id="amount"/>
+                            <a href="javascript:void(0);" onclick="sub()" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
+                        </div>
+                    </div>
+                    <button class="add-to-cart cart">Add To Cart</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+  </section>
 
 
   <section class="suggest products my-5">
@@ -557,6 +673,8 @@
 
   <!-- rateyo script -->
   <script src="js/jquery.rateyo.min.js"></script>
+
+  <script src="Js/flickity.pkgd.min.js"></script>
 
   <!-- wow script -->
   <!-- <script src="js/wow.min.js"></script> -->
