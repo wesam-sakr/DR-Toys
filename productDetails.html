@@ -1,698 +1,894 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DR Toys</title>
+    <link rel="icon" type="image/x-icon" href="images/d_logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DR Toys</title>
-  <link rel="icon" type="image/x-icon" href="images/d_logo.png" />
-  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-  <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet" href="css/nice-select.css" />
-  <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
-  <link rel="stylesheet" href="css/flickity.css">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <!-- scroll top -->
+    <a href="javascript:void(0)" id="scroll-top">
+      <i class="bi bi-chevron-up"></i>
+    </a>
 
-<body>
-  <!-- scroll top -->
-  <a href="javascript:void(0)" id="scroll-top">
-    <i class="bi bi-chevron-up"></i>
-  </a>
-
-  <!-- loading -->
-  <section id="loading">
-    <div class="loader">
-      <img src="images/d_logo.png" alt="" />
-    </div>
-  </section>
-
-  <!-- nav -->
-  <nav>
-    <div class="top-nav">
-      <div class="container-lg d-flex flex-md-row flex-column align-items-center justify-content-between">
-        <ul class="text-center text-md-end">
-          <li>
-            <i class="fa-solid fa-truck-fast"></i>
-            <span>توصيل مجاني للطلبات اكثر من 400 ج.م</span>
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <span>info@gmail.com</span>
-          </li>
-        </ul>
-
-        <ul class="">
-          <li>
-            <i class="fa-solid fa-location-dot"></i>
-            <a href="">العنوان يكتب هنا</a>
-          </li>
-          <li>
-            <i class="fa-regular fa-circle-question"></i>
-            <a href="contactUs.html">المساعدة</a>
-          </li>
-        </ul>
+    <!-- loading -->
+    <section id="loading">
+      <div class="loader">
+        <img src="images/d_logo.png" alt="" />
       </div>
-    </div>
-    <div class="middle-nav">
-      <div class="container-lg d-flex justify-content-between align-items-center">
-        <div class="col-4 col-md-3">
-          <div class="logo">
-            <a class="navbar-brand d-block m-0" href="index.html">
-              <img src="images/d_logo.png" alt="DR Toys logo" />
-            </a>
-          </div>
-        </div>
-        <div class="col-8 col-lg-6">
-          <div class="search-box">
-            <select name="" id="">
-              <option value="">الفئات</option>
-              <option value="">ألعاب المحرکات</option>
-              <option value="">إستشارات فی تنمیة المهارات</option>
-              <option value="">ألعاب تنمیة المهارات</option>
-              <option value="">الأدوات المدرسیة واللانش بوکس</option>
-            </select>
-            <input type="search" placeholder="  ابحث عن منتج .... " />
-            <button>
-              <i class="bi bi-search"></i>
-            </button>
-          </div>
-        </div>
-        <div class="col-lg-auto">
-          <div class="phone-wrap">
-            <div class="info-icon phone-icon">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="info-text phone-no">
-              <span> مساعدة 24/7:</span>
-              <a href="tel:+888-0000-000">0109887844</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bottom-nav">
-      <div class="navbar navbar-expand-lg navbar-light">
-        <div class="container-lg">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav-links navbar-nav me-auto mb-2 mb-lg-0">
-              <li>
-                <a href="index.html" class="active">الصفحة الرئيسية</a>
-              </li>
-              <li>
-                <a href="about.html">من نحن</a>
-              </li>
-              <li>
-                <a href="products.html">المنتجات</a>
-              </li>
-              <li>
-                <a href="courses.html">كورسات</a>
-              </li>
-              <li>
-                <a href="advice.html">الاستشارات</a>
-              </li>
-              <li>
-                <a href="contact.html">تواصل معنا</a>
-              </li>
-            </ul>
-          </div>
-          <ul class="auth">
+    </section>
+
+    <!-- nav -->
+    <nav>
+      <div class="top-nav">
+        <div
+          class="container-lg d-flex flex-md-row flex-column align-items-center justify-content-between"
+        >
+          <ul class="text-center text-md-end">
             <li>
-              <a href="favourite.html">
-                <span class="count">1</span>
-                <i class="fa-solid fa-heart"></i>
-              </a>
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>توصيل مجاني للطلبات اكثر من 400 ج.م</span>
             </li>
             <li>
-              <a href="cart.html">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </a>
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@gmail.com</span>
+            </li>
+          </ul>
+
+          <ul class="">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <a href="">العنوان يكتب هنا</a>
             </li>
             <li>
-              <a href="profile.html">
-                <i class="fa-solid fa-user"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-solid fa-globe"></i>
-              </a>
+              <i class="fa-regular fa-circle-question"></i>
+              <a href="contactUs.html">المساعدة</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
-  </nav>
+      <div class="middle-nav">
+        <div
+          class="container-lg d-flex justify-content-between align-items-center"
+        >
+          <div class="col-4 col-md-3">
+            <div class="logo">
+              <a class="navbar-brand d-block m-0" href="index.html">
+                <img src="images/d_logo.png" alt="DR Toys logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-8 col-lg-6">
+            <div class="search-box">
+              <select name="" id="">
+                <option value="">الفئات</option>
+                <option value="">ألعاب المحرکات</option>
+                <option value="">إستشارات فی تنمیة المهارات</option>
+                <option value="">ألعاب تنمیة المهارات</option>
+                <option value="">الأدوات المدرسیة واللانش بوکس</option>
+              </select>
+              <input type="search" placeholder="  ابحث عن منتج .... " />
+              <button>
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-auto">
+            <div class="phone-wrap">
+              <div class="info-icon phone-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="info-text phone-no">
+                <span> مساعدة 24/7:</span>
+                <a href="tel:+888-0000-000">0109887844</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-nav">
+        <div class="navbar navbar-expand-lg navbar-light">
+          <div class="container-lg">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav-links navbar-nav me-auto mb-2 mb-lg-0">
+                <li>
+                  <a href="index.html" class="active">الصفحة الرئيسية</a>
+                </li>
+                <li>
+                  <a href="about.html">من نحن</a>
+                </li>
+                <li>
+                  <a href="products.html">المنتجات</a>
+                </li>
+                <li>
+                  <a href="courses.html">كورسات</a>
+                </li>
+                <li>
+                  <a href="advice.html">الاستشارات</a>
+                </li>
+                <li>
+                  <a href="contact.html">تواصل معنا</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="auth">
+              <li>
+                <a href="favourite.html">
+                  <span class="count">1</span>
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </li>
+              <li>
+                <a href="cart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </li>
+              <li>
+                <a href="profile.html">
+                  <i class="fa-solid fa-user"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-globe"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-  <div class="container-lg my-5">
-      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb-wrapper position-relative">
-        <img src="images/footer-bottom-shape-3.svg" alt="">
+    <div class="container-lg my-5">
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        class="breadcrumb-wrapper position-relative"
+      >
+        <img src="images/footer-bottom-shape-3.svg" alt="" />
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
           <li class="breadcrumb-item"><a href="#">المنتجات</a></li>
           <li class="breadcrumb-item active" aria-current="page">اسم المنتج</li>
         </ol>
       </nav>
-  </div>
+    </div>
 
+    
 
-  <section class="product_details">
-    <div class="container-lg">
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="" >
-            <!-- Flickity HTML init -->
-            <div class="carousel carousel-main" data-flickity>
-                <div class="carousel-cell">
-                    <img src="images/product_01.png" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/product_03.png" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/product_04.png" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/product_05.png" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/product_06.png" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/product_09.png" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/product_17.png" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/product_18.png" alt="">
-                </div>
-            </div>
-            
-            <div class="carousel carousel-nav"
-                data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
-              <div class="carousel-cell">
-                <img src="images/product_01.png" alt="">
-              </div>
-              <div class="carousel-cell">
-                  <img src="images/product_03.png" alt="">
-              </div>
-              <div class="carousel-cell">
-                  <img src="images/product_04.png" alt="">
-              </div>
-              <div class="carousel-cell">
-                  <img src="images/product_05.png" alt="">
-              </div>
-              <div class="carousel-cell">
-                  <img src="images/product_06.png" alt="">
-              </div>
-              <div class="carousel-cell">
-                  <img src="images/product_09.png" alt="">
-              </div>
-              <div class="carousel-cell">
-                  <img src="images/product_17.png" alt="">
-              </div>
-              <div class="carousel-cell">
-                  <img src="images/product_18.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6">
-            <div class="cart-product-item bg-transparent">
-                <div class="col-12">
-                    <div class="cart-product-name d-flex justify-content-between align-items-center mb-3">
-                      <h5>Regular Succulent Shebang</h5>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <button type="button" class="btn py-2 rounded"><i class="far fa-heart" style="color: #000;"></i></button>
-                      </div>
+    <section class="product_details pb-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="single-img position-relative">
+              <span class="badge discount">20%</span>
+              <div class="all">
+                <div class="slider">
+                  <div class="owl-carousel owl-theme one">
+                    <div class="item-box">
+                      <img src="images/product_01.png" alt="" />
                     </div>
-                    <div id="rateYo" class="mb-3" rateYo="3"></div>
-                    <p class="product-preview">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit blanditiis officia quibusdam repellat eligendi praesentium id iste, velit voluptas! Fuga aut tenetur in. Sunt consectetur ipsa provident dolor voluptate numquam dolore aut? Neque ratione hic expedita, architecto voluptatibus voluptates.
-                    </p>
-                    <ul class="plant-care">
-                        <li>
-                            <img src="images/watering.png" alt="">
-                            <div>
-                                <h5>irrigation</h5>
-                                <p>The plant is not irrigated until the soil is partially dry, and it is preferable to spray its leaves with water mist constantly, as it is moisture-loving.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/plant (1).png" alt="">
-                            <div>
-                                <h5>lighting</h5>
-                                <p>The plant needs bright to medium light such as window light or artificial room lighting.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/temperature.png" alt="">
-                            <div>
-                                <h5>temperature</h5>
-                                <p>The plant needs a moderate atmosphere that is suitable for normal room temperature up to 25°C.</p>
-                            </div>
-                            <span></span>
-                        </li>
-                    </ul>
-                    <div class="product-info">
-                        <span class="full-price"><span id="price">250</span> $</span>
-                        <div class="product-quantity">
-                            <a href="javascript:void(0);"onclick="add()" class='qtyplus plus quantity' ><i class="bi bi-plus-lg"></i></a>
-                            <input type='text' name='quantity' value='1' class='qty' id="amount"/>
-                            <a href="javascript:void(0);" onclick="sub()" class='qtyminus minus quantity' ><i class="bi bi-dash-lg"></i></a>
-                        </div>
+                    <div class="item-box">
+                      <img src="images/product_03.png" alt=""/>
                     </div>
-                    <button class="add-to-cart cart">Add To Cart</button>
-                </div>
-              </div>
-        </div>
-    </div>
-    </div>
-  </section>
-
-
-  <section class="suggest products my-5">
-    <div class="container-lg">
-      <div class="title-link">
-        <div>
-          <h5 class="title">منتجات ذات صلة</h5>
-        </div>
-        <a href="products.html">المزيد <i class="fa-solid fa-chevron-left"></i></a>
-      </div>
-      <div class="owl-carousel">
-        <div class="product">
-          <div class="card">
-            <a href="productDetails.html" class="link"></a>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <div class="card-img-top">
-              <img src="images/product_01.png" alt="..." />
-            </div>
-            <div class="card-body p-0">
-              <div class="card-title">
-                <p class="fw-bold">العاب اطفال</p>
-              </div>
-              <div class="prices d-flex gap-2 align-items-center justify-content-center">
-                <p class="card-price">
-                  <span> 700 ج.م</span>
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a data-bs-toggle="modal" href="" role="button">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>إضافة للسلة</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="card">
-            <a href="productDetails.html" class="link"></a>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <div class="card-img-top">
-              <img src="images/product_03.png" alt="..." />
-            </div>
-            <div class="card-body p-0">
-              <div class="card-title">
-                <p class="fw-bold">العاب اطفال</p>
-              </div>
-              <div class="prices d-flex gap-2 align-items-center justify-content-center">
-                <p class="card-price">
-                  <span> 700 ج.م</span>
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a data-bs-toggle="modal" href="" role="button">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>إضافة للسلة</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="card">
-            <a href="productDetails.html" class="link"></a>
-            <span class="badge discount">20%</span>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <div class="card-img-top">
-              <img src="images/product_04.png" alt="..." />
-            </div>
-            <div class="card-body p-0">
-              <div class="card-title">
-                <p class="fw-bold">العاب اطفال</p>
-              </div>
-              <div class="prices d-flex gap-2 align-items-center justify-content-center">
-                <p class="card-price">
-                  <span> 700 ج.م</span>
-                </p>
-                <p class="old-price">767 ج.م</p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a data-bs-toggle="modal" href="" role="button">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>إضافة للسلة</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="card">
-            <a href="productDetails.html" class="link"></a>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <div class="card-img-top">
-              <img src="images/product_18.png" alt="..." />
-            </div>
-            <div class="card-body p-0">
-              <div class="card-title">
-                <p class="fw-bold">العاب اطفال</p>
-              </div>
-              <div class="prices d-flex gap-2 align-items-center justify-content-center">
-                <p class="card-price">
-                  <span> 700 ج.م</span>
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a data-bs-toggle="modal" href="" role="button">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>إضافة للسلة</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="card">
-            <a href="productDetails.html" class="link"></a>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <div class="card-img-top">
-              <img src="images/product_17.png" alt="..." />
-            </div>
-            <div class="card-body p-0">
-              <div class="card-title">
-                <p class="fw-bold">العاب اطفال</p>
-              </div>
-              <div class="prices d-flex gap-2 align-items-center justify-content-center">
-                <p class="card-price">
-                  <span> 700 ج.م</span>
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a data-bs-toggle="modal" href="" role="button">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>إضافة للسلة</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="card">
-            <a href="productDetails.html" class="link"></a>
-            <span class="badge discount">20%</span>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <div class="card-img-top">
-              <img src="images/product_06.png" alt="..." />
-            </div>
-            <div class="card-body p-0">
-              <div class="card-title">
-                <p class="fw-bold">العاب اطفال</p>
-              </div>
-              <div class="prices d-flex gap-2 align-items-center justify-content-center">
-                <p class="card-price">
-                  <span> 700 ج.م</span>
-                </p>
-                <p class="old-price">767 ج.م</p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a data-bs-toggle="modal" href="" role="button">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>إضافة للسلة</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="card">
-            <a href="productDetails.html" class="link"></a>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <div class="card-img-top">
-              <img src="images/product_09.png" alt="..." />
-            </div>
-            <div class="card-body p-0">
-              <div class="card-title">
-                <p class="fw-bold">العاب اطفال</p>
-              </div>
-              <div class="prices d-flex gap-2 align-items-center justify-content-center">
-                <p class="card-price">
-                  <span> 700 ج.م</span>
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a data-bs-toggle="modal" href="" role="button">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>إضافة للسلة</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="card">
-            <a href="productDetails.html" class="link"></a>
-            <button class="fav">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <div class="card-img-top">
-              <img src="images/product_19.png" alt="..." />
-            </div>
-            <div class="card-body p-0">
-              <div class="card-title">
-                <p class="fw-bold">العاب اطفال</p>
-              </div>
-              <div class="prices d-flex gap-2 align-items-center justify-content-center">
-                <p class="card-price">
-                  <span> 700 ج.م</span>
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <a data-bs-toggle="modal" href="" role="button">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>إضافة للسلة</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container-lg">
-      <!-- children images -->
-      <ul class="rt-shape rt-shape1">
-        <li>
-          <img class="wow animate__fadeInLeft animate__animated animated" width="169" height="270"
-            src="images/footer-doll-left.svg" alt="toyup" />
-        </li>
-        <li>
-          <img class="wow animate__fadeInLeft animate__animated animated" width="217" height="255"
-            src="images/footer-doll-right.svg" alt="toyup" />
-        </li>
-      </ul>
-      <div class="footer-content">
-        <!-- cloud images -->
-        <ul class="rt-shape rt-shape3">
-          <li>
-            <img loading="lazy"
-              src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/themes/toyup/assets/element/cloud-1.svg"
-              width="130" height="41" alt="footer" />
-          </li>
-          <li>
-            <img loading="lazy"
-              src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/themes/toyup/assets/element/cloud-4.svg"
-              width="304" height="431" alt="footer" />
-          </li>
-          <li>
-            <img loading="lazy"
-              src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/themes/toyup/assets/element/cloud-3.svg"
-              width="134" height="43" alt="footer" />
-          </li>
-          <li>
-            <img loading="lazy"
-              src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/themes/toyup/assets/element/cloud-2.svg"
-              width="350" height="346" alt="footer" />
-          </li>
-        </ul>
-        <!-- links -->
-        <div class="row gy-4 justify-content-between">
-          <div class="col-lg-12 text-center">
-            <div class="logo">
-              <img src="images/d_logo.png" alt="" />
-              <p class="mb-4">تواصل معنا ليصلك جديدنا</p>
-              <div class="subscribe">
-                <form action="">
-                  <div class="input-group">
-                    <i class="fs-4 bi bi-envelope"></i>
-                    <input type="email" class="form-control" placeholder="ادخل البريد الإلكتروني الخاص بك" />
-                    <div class="input-group-text">
-                      <button class="subscribe_btn">
-                        <i class="fa-regular fa-paper-plane"></i>
-                      </button>
+                    <div class="item-box">
+                      <img src="images/product_04.png" alt="" />
+                    </div>
+                    <div class="item-box">
+                      <img src="images/product_05.png" alt="" />
+                    </div>
+                    <div class="item-box">
+                      <img src="images/product_06.png"alt=""/>
+                    </div>
+                    <div class="item-box">
+                      <img src="images/product_17.png" alt="" />
                     </div>
                   </div>
-                </form>
+                </div>
+                <div class="slider-two">
+                  <div class="owl-carousel owl-theme two">
+                    <div class="item active">
+                      <img src="images/product_01.png" alt="" />
+                    </div>
+                    <div class="item">
+                      <img src="images/product_03.png" alt=""/>
+                    </div>
+                    <div class="item">
+                      <img src="images/product_04.png" alt="" />
+                    </div>
+                    <div class="item">
+                      <img src="images/product_05.png" alt="" />
+                    </div>
+                    <div class="item">
+                      <img src="images/product_06.png" alt=""/>
+                    </div>
+                    <div class="item">
+                      <img src="images/product_17.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="left-t nonl-t">
+                    <i class="bi bi-chevron-left"></i>
+                  </div>
+                  <div class="right-t">
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                </div>
               </div>
-              <div class="social-icons justify-content-center mb-3">
-                <a href="">
-                  <i class="fa-solid fa-phone"></i>
-                </a>
-                <a href="">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a href="">
-                  <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="cart-product-item position-relative">
+              <button type="button" class="fav btn py-2 rounded">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="col-12">
+                <div
+                  class="cart-product-name mb-2"
+                >
+                  <h5>دمية ثعلبه </h5>
+                </div>
+                <div class="Stars" style="--rating: 4"></div>
+                
+                <p class="product-preview">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال
+                </p>
+                
+                <div class="product-info">
+                  <div class="prices d-flex gap-2 align-items-center">
+                    <div class="card-price">
+                      <span> 700 ج.م</span>
+                    </div>
+                    <div class="old-price">767 ج.م</div>
+                  </div>
+                  <div class="product-quantity">
+                    <a
+                      href="javascript:void(0);"
+                      onclick="add()"
+                      class="qtyplus plus quantity"
+                      ><i class="bi bi-plus-lg"></i
+                    ></a>
+                    <input
+                      type="text"
+                      name="quantity"
+                      value="1"
+                      class="qty"
+                      id="amount"
+                    />
+                    <a
+                      href="javascript:void(0);"
+                      onclick="sub()"
+                      class="qtyminus minus quantity"
+                      ><i class="bi bi-dash-lg"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="card-footer mt-3">
+                  <a data-bs-toggle="modal" href="" role="button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>إضافة للسلة</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="desc-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#desc"
+              type="button"
+              role="tab"
+              aria-controls="desc"
+              aria-selected="true"
+            >
+              الوصف
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="rate-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#rate"
+              type="button"
+              role="tab"
+              aria-controls="rate"
+              aria-selected="false"
+            >
+              التقييمات
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="desc"
+            role="tabpanel"
+            aria-labelledby="desc-tab"
+          >
+            <p>
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.
+            </p>
+            <iframe src="https://www.youtube.com/embed/QGfIsTZ5hSo?si=4AvTJlrreQlw9k_6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="rate"
+            role="tabpanel"
+            aria-labelledby="rate-tab"
+          >
+            <div class="comments">
+              <div class="user-comments-wrapper">
+                <div class="user-comment-container">
+                  <div
+                    class="user-comment align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="avatar">
+                        <img src="images/wesam.jpg" alt="" />
+                      </div>
+                      <div class="comment-details">
+                        <h6>وسام صقر</h6>
+                        <p>11 ابريل 2024 3:00 صباحا</p>
+                      </div>
+                    </div>
+                    <div class="Stars" style="--rating: 4"></div>
+                  </div>
+                  <p class="comment">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                    توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
+                    عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي"
+                    فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح
+                    النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم
+                    بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال
+                  </p>
+                </div>
+                <div class="user-comment-container">
+                  <div
+                    class="user-comment align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="avatar">
+                        <img src="images/wesam.jpg" alt="" />
+                      </div>
+                      <div class="comment-details">
+                        <h6>وسام صقر</h6>
+                        <p>11 ابريل 2024 3:00 صباحا</p>
+                      </div>
+                    </div>
+                    <div class="Stars" style="--rating: 4"></div>
+                  </div>
+                  <p class="comment">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                    توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
+                    عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي"
+                    فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح
+                    النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم
+                    بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال
+                  </p>
+                </div>
+              </div>
+              <div class="your-comment">
+                <div class="d-flex align-items-center my-2">
+                  <span>اضف تقييمك</span>
+                  <div id="your-rate" class="mb-1 px-2" rateYo="5"></div>
+                </div>
+                <textarea
+                  class="form-control"
+                  name="comment"
+                  rows="8"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="main-btn px-5"
+                  style="width: fit-content"
+                >
+                  ارسال
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="suggest products my-5">
+      <div class="container-lg">
+        <div class="title-link">
+          <div>
+            <h5 class="title">منتجات ذات صلة</h5>
+          </div>
+          <a href="products.html"
+            >المزيد <i class="fa-solid fa-chevron-left"></i
+          ></a>
+        </div>
+        <div class="owl-carousel">
+          <div class="product">
+            <div class="card">
+              <a href="productDetails.html" class="link"></a>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="card-img-top">
+                <img src="images/product_01.png" alt="..." />
+              </div>
+              <div class="card-body p-0">
+                <div class="card-title">
+                  <p class="fw-bold">العاب اطفال</p>
+                </div>
+                <div
+                  class="prices d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <p class="card-price">
+                    <span> 700 ج.م</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a data-bs-toggle="modal" href="" role="button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>إضافة للسلة</span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-md-auto col-lg-auto">
-            <h5>روابط هامة</h5>
-            <ul class="">
-              <li>
-                <a href="about.html">من نحن</a>
-              </li>
-              <li>
-                <a href="contactUs.html">تواصل معنا</a>
-              </li>
-              <li>
-                <a href="cart.html">سلة الشراء</a>
-              </li>
-              <li>
-                <a href="favourite.html">المفضلة</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 col-lg-auto">
-            <h5>خدمة العملاء</h5>
-            <ul class="">
-              <li>
-                <a href="profile.html">حسابي</a>
-              </li>
-              <li>
-                <a href="orders.html">الطلبات</a>
-              </li>
-              <li>
-                <a href="return.html">سياسة الارجاع</a>
-              </li>
-              <li>
-                <a href="terms.html">الشروط والأحكام</a>
-              </li>
-              <li>
-                <a href="terms.html">سياسة الخصوصية</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <h5>تواصل معنا</h5>
-            <ul>
-              <li>
-                <a href="">
-                  كلمنا :
-                  <span> 040-2240206</span>
+          <div class="product">
+            <div class="card">
+              <a href="productDetails.html" class="link"></a>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="card-img-top">
+                <img src="images/product_03.png" alt="..." />
+              </div>
+              <div class="card-body p-0">
+                <div class="card-title">
+                  <p class="fw-bold">العاب اطفال</p>
+                </div>
+                <div
+                  class="prices d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <p class="card-price">
+                    <span> 700 ج.م</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a data-bs-toggle="modal" href="" role="button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>إضافة للسلة</span>
                 </a>
-              </li>
-              <li>
-                <a href="">
-                  راسلنا :
-                  <span> 01030292804</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card">
+              <a href="productDetails.html" class="link"></a>
+              <span class="badge discount">20%</span>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="card-img-top">
+                <img src="images/product_04.png" alt="..." />
+              </div>
+              <div class="card-body p-0">
+                <div class="card-title">
+                  <p class="fw-bold">العاب اطفال</p>
+                </div>
+                <div
+                  class="prices d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <p class="card-price">
+                    <span> 700 ج.م</span>
+                  </p>
+                  <p class="old-price">767 ج.م</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a data-bs-toggle="modal" href="" role="button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>إضافة للسلة</span>
                 </a>
-              </li>
-              <li>
-                <a href=""> العنوان يكتب هنا </a>
-              </li>
-            </ul>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card">
+              <a href="productDetails.html" class="link"></a>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="card-img-top">
+                <img src="images/product_18.png" alt="..." />
+              </div>
+              <div class="card-body p-0">
+                <div class="card-title">
+                  <p class="fw-bold">العاب اطفال</p>
+                </div>
+                <div
+                  class="prices d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <p class="card-price">
+                    <span> 700 ج.م</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a data-bs-toggle="modal" href="" role="button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>إضافة للسلة</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card">
+              <a href="productDetails.html" class="link"></a>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="card-img-top">
+                <img src="images/product_17.png" alt="..." />
+              </div>
+              <div class="card-body p-0">
+                <div class="card-title">
+                  <p class="fw-bold">العاب اطفال</p>
+                </div>
+                <div
+                  class="prices d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <p class="card-price">
+                    <span> 700 ج.م</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a data-bs-toggle="modal" href="" role="button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>إضافة للسلة</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card">
+              <a href="productDetails.html" class="link"></a>
+              <span class="badge discount">20%</span>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="card-img-top">
+                <img src="images/product_06.png" alt="..." />
+              </div>
+              <div class="card-body p-0">
+                <div class="card-title">
+                  <p class="fw-bold">العاب اطفال</p>
+                </div>
+                <div
+                  class="prices d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <p class="card-price">
+                    <span> 700 ج.م</span>
+                  </p>
+                  <p class="old-price">767 ج.م</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a data-bs-toggle="modal" href="" role="button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>إضافة للسلة</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card">
+              <a href="productDetails.html" class="link"></a>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="card-img-top">
+                <img src="images/product_09.png" alt="..." />
+              </div>
+              <div class="card-body p-0">
+                <div class="card-title">
+                  <p class="fw-bold">العاب اطفال</p>
+                </div>
+                <div
+                  class="prices d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <p class="card-price">
+                    <span> 700 ج.م</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a data-bs-toggle="modal" href="" role="button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>إضافة للسلة</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card">
+              <a href="productDetails.html" class="link"></a>
+              <button class="fav">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="card-img-top">
+                <img src="images/product_19.png" alt="..." />
+              </div>
+              <div class="card-body p-0">
+                <div class="card-title">
+                  <p class="fw-bold">العاب اطفال</p>
+                </div>
+                <div
+                  class="prices d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <p class="card-price">
+                    <span> 700 ج.م</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a data-bs-toggle="modal" href="" role="button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>إضافة للسلة</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="rights">
-      <p>2024 جميع الحقوق محفوظة لموقع DR Toys</p>
-    </div>
-    <div class="footer-bottom-shape">
-      <img width="1920" height="219" src="images/footer-bottom-shape-1.svg" alt="toyup" />
-    </div>
-  </footer>
+    </section>
 
-  <!-- jQuery script -->
-  <script src="js/jquery-3.6.0.min.js"></script>
+    <footer>
+      <div class="container-lg">
+        <!-- children images -->
+        <ul class="rt-shape rt-shape1">
+          <li>
+            <img
+              class="wow animate__fadeInLeft animate__animated animated"
+              width="169"
+              height="270"
+              src="images/footer-doll-left.svg"
+              alt="toyup"
+            />
+          </li>
+          <li>
+            <img
+              class="wow animate__fadeInLeft animate__animated animated"
+              width="217"
+              height="255"
+              src="images/footer-doll-right.svg"
+              alt="toyup"
+            />
+          </li>
+        </ul>
+        <div class="footer-content">
+          <!-- cloud images -->
+          <ul class="rt-shape rt-shape3">
+            <li>
+              <img
+                loading="lazy"
+                src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/themes/toyup/assets/element/cloud-1.svg"
+                width="130"
+                height="41"
+                alt="footer"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/themes/toyup/assets/element/cloud-4.svg"
+                width="304"
+                height="431"
+                alt="footer"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/themes/toyup/assets/element/cloud-3.svg"
+                width="134"
+                height="43"
+                alt="footer"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/themes/toyup/assets/element/cloud-2.svg"
+                width="350"
+                height="346"
+                alt="footer"
+              />
+            </li>
+          </ul>
+          <!-- links -->
+          <div class="row gy-4 justify-content-between">
+            <div class="col-lg-12 text-center">
+              <div class="logo">
+                <img src="images/d_logo.png" alt="" />
+                <p class="mb-4">تواصل معنا ليصلك جديدنا</p>
+                <div class="subscribe">
+                  <form action="">
+                    <div class="input-group">
+                      <i class="fs-4 bi bi-envelope"></i>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="ادخل البريد الإلكتروني الخاص بك"
+                      />
+                      <div class="input-group-text">
+                        <button class="subscribe_btn">
+                          <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="social-icons justify-content-center mb-3">
+                  <a href="">
+                    <i class="fa-solid fa-phone"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-auto col-lg-auto">
+              <h5>روابط هامة</h5>
+              <ul class="">
+                <li>
+                  <a href="about.html">من نحن</a>
+                </li>
+                <li>
+                  <a href="contactUs.html">تواصل معنا</a>
+                </li>
+                <li>
+                  <a href="cart.html">سلة الشراء</a>
+                </li>
+                <li>
+                  <a href="favourite.html">المفضلة</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-auto">
+              <h5>خدمة العملاء</h5>
+              <ul class="">
+                <li>
+                  <a href="profile.html">حسابي</a>
+                </li>
+                <li>
+                  <a href="orders.html">الطلبات</a>
+                </li>
+                <li>
+                  <a href="return.html">سياسة الارجاع</a>
+                </li>
+                <li>
+                  <a href="terms.html">الشروط والأحكام</a>
+                </li>
+                <li>
+                  <a href="terms.html">سياسة الخصوصية</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <h5>تواصل معنا</h5>
+              <ul>
+                <li>
+                  <a href="">
+                    كلمنا :
+                    <span> 040-2240206</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    راسلنا :
+                    <span> 01030292804</span>
+                  </a>
+                </li>
+                <li>
+                  <a href=""> العنوان يكتب هنا </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rights">
+        <p>2024 جميع الحقوق محفوظة لموقع DR Toys</p>
+      </div>
+      <div class="footer-bottom-shape">
+        <img
+          width="1920"
+          height="219"
+          src="images/footer-bottom-shape-1.svg"
+          alt="toyup"
+        />
+      </div>
+    </footer>
 
-  <!-- owl-carousel script -->
-  <script src="js/owl.carousel.min.js"></script>
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
 
-  <!-- bootstrap script -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- owl-carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
 
-  <!-- nice select script -->
-  <script src="js/jquery.nice-select.min.js"></script>
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
-  <!-- rateyo script -->
-  <script src="js/jquery.rateyo.min.js"></script>
+    <!-- nice select script -->
+    <script src="js/jquery.nice-select.min.js"></script>
 
-  <script src="Js/flickity.pkgd.min.js"></script>
+    <!-- rateyo script -->
+    <script src="js/jquery.rateyo.min.js"></script>
 
-  <!-- wow script -->
-  <!-- <script src="js/wow.min.js"></script> -->
+    <!-- wow script -->
+    <!-- <script src="js/wow.min.js"></script> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
-  <!-- intlTelInput script -->
-  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/intlTelInput.min.js"></script>
-  <script>
-    const input = document.querySelector("#mobile");
-    window.intlTelInput(input, {
-      utilsScript:
-        "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/utils.js",
-    });
-  </script>
+    <!-- intlTelInput script -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/intlTelInput.min.js"></script>
+    <script>
+      const input = document.querySelector("#mobile");
+      window.intlTelInput(input, {
+        utilsScript:
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/utils.js",
+      });
+    </script>
 
-  <!-- custom js file link  -->
-  <script src="js/script.js"></script>
-</body>
-
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
