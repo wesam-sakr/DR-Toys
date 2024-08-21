@@ -89,6 +89,7 @@ $(document).ready(function () {
   $(".suggest .owl-carousel").owlCarousel({
     loop: true,
     autoplay: true,
+    autoplayHoverPause: true,
     margin: 24,
     items: 5,
     rtl: dirAr,
@@ -107,7 +108,6 @@ $(document).ready(function () {
       }
     }
   });
-
 
   var changeSlide = 4; // mobile -1, desktop + 1
   // Resize and refresh page. slider-two slideBy bug remove
