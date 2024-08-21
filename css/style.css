@@ -211,6 +211,23 @@ p {
    -webkit-text-fill-color: transparent;
 }
 
+.toast-container .toast-header{
+   background: var(--yellow);
+   color: #fff;
+}
+.toast-container .toast {
+   background-color: rgb(255 255 255 / 85%);
+   text-align: center;
+}
+/* .toast-container .toast img{
+   width: 80px;
+   text-align: center;
+   object-fit: contain;
+} */
+.toast-container .toast .main-btn {
+   background: var(--yellow) !important;
+}
+
 #loading {
    position: fixed;
    top: 0;
@@ -1618,75 +1635,50 @@ header .parent .cat_1 *:not(.owl-dots, .owl-dots *) {
 }
 
 /* -------- discover Offer -------- */
-.discover{
-   border-radius: 12px;
-   overflow: hidden;
-}
-/* .discoverOffer {
-   background: url(../images/overhead-view-dried-tea-herbs-isolated-white-backdrop.png);
-   border-radius: 20px;
-   padding: 7rem 2rem;
-   background-repeat: round !important;
-   background-size: cover !important;
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   -ms-border-radius: 20px;
-   -o-border-radius: 20px;
-}
 
-html[dir='ltr'] .discoverOffer {
-   background: url('../images/bg-en.png') !important;
-   background-size: cover !important;
-} */
-
-/* .getOffer h5 {
-   color: var(--sky);
-   margin-bottom: 1.1rem;
-}
-
-.getOffer h5,
-.getOffer p {
-   font-weight: bold;
-} */
-
-/* .discoverOffer h3 {
-   color: var(--sky);
-   font-weight: 700;
-   margin-bottom: 1.5rem;
-}
-
-
-.discoverOffer .main-btn {
-   padding-block: .75rem;
-} */
-
-
-
-/* -------- features -------- */
-/* .feature {
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-}
-
-.feature .f_img {
+.Testimonial .card {
    background: var(--white);
-   width: 50px;
-   height: 50px;
-   padding: 10px;
-   border-radius: 50%;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
+   border: unset;
+   border-radius: 12px;
+   height: 100%;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   -ms-border-radius: 12px;
+   -o-border-radius: 12px;
+   padding: 1.5rem;
+   /* padding-top: 10px; */
    text-align: center;
+   transition: .5s;
+   margin-top: 120px;
+   margin-inline: 12px;
 }
-
-.feature .f_img img {
-   width: 24px;
-} */
-
-
+.Testimonial .card .head{
+   position: absolute;
+   width: 90px;
+   top:0;
+   inset-inline: 50%;
+   transform: translate(50%, -100%);
+   -webkit-transform: translate(50%, -100%);
+   -moz-transform: translate(50%, -100%);
+   -ms-transform: translate(50%, -100%);
+   -o-transform: translate(50%, -100%);
+}
+.Testimonial .card .hand{
+   position: absolute;
+   width: 25px;
+   top: 25px;
+   /* transform: translate(50%, 0%);
+   -webkit-transform: translate(50%, 0%);
+   -moz-transform: translate(50%, 0%);
+   -ms-transform: translate(50%, 0%);
+   -o-transform: translate(50%, 0%); */
+}
+.Testimonial .card .hand.hand2{
+   inset-inline-end: -12px;
+}
+.Testimonial .card .hand.hand1{
+   inset-inline-start: -12px;
+}
 /* -------- subscribe email -------- */
 .subscribe {
    width: 50%;

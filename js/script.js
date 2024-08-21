@@ -109,6 +109,29 @@ $(document).ready(function () {
     }
   });
 
+  $(".Testimonial .owl-carousel").owlCarousel({
+    // loop: true,
+    // autoplay: true,
+    // autoplayHoverPause: true,
+    margin: 24,
+    items: 5,
+    rtl: dirAr,
+    responsive: {
+      0: {
+        items: 2,
+        nav: false
+      },
+      768: {
+        items: 3,
+        nav: false
+      },
+      998: {
+        items: 4,
+        nav: false,
+      }
+    }
+  });
+
   var changeSlide = 4; // mobile -1, desktop + 1
   // Resize and refresh page. slider-two slideBy bug remove
   var slide = changeSlide;
@@ -220,7 +243,13 @@ $(document).ready(function () {
     rtl: dirAr
   });
 
-
+  $("#your-site-rate").rateYo({
+    starWidth: "20px",
+    ratedFill: "#FFC107",
+    rating: 5,
+    fullStar: true,
+    rtl: dirAr
+  });
 
 
   $(".add-address").click(function () {
@@ -246,53 +275,6 @@ $(document).ready(function () {
   $(".filter-header .btn-close").click(function () {
     $(".filter").toggleClass("filter-toggle");
   });
-
-// Add event listeners to filter options
-// const selectedFiltersList = document.getElementById('selected-filters-list');
-// const filterInputs = document.querySelectorAll('.form-check-input');
-
-// filterInputs.forEach(input => {
-//   input.addEventListener('change', function() {
-//     const label = this.nextElementSibling.textContent.trim();
-
-//     if (this.checked) {
-//       // Add selected filter if it's not already added
-//       let existingFilter = selectedFiltersList.querySelector(`[data-filter="${this.id}"]`);
-//       if (!existingFilter) {
-//         const li = document.createElement('li');
-//         li.textContent = label;
-//         li.setAttribute('data-filter', this.id);
-
-//         // For radio buttons, associate the filter with the radio group
-//         if (this.type === 'radio') {
-//           const groupName = this.name;
-//           const previousSelection = selectedFiltersList.querySelector(`[data-group="${groupName}"]`);
-//           if (previousSelection) {
-//             selectedFiltersList.removeChild(previousSelection);
-//           }
-//           li.setAttribute('data-group', this.name);
-//         }
-
-//         const removeBtn = document.createElement('button');
-//         removeBtn.innerHTML = '<i class="fas fa-times"></i>';
-//         removeBtn.className = 'remove-filter-btn';
-//         removeBtn.onclick = function() {
-//           document.getElementById(li.getAttribute('data-filter')).checked = false;
-//           selectedFiltersList.removeChild(li);
-//         };
-
-//         li.appendChild(removeBtn);
-//         selectedFiltersList.appendChild(li);
-//       }
-//     } else {
-//       // Remove unselected filter
-//       const itemToRemove = selectedFiltersList.querySelector(`[data-filter="${this.id}"]`);
-//       if (itemToRemove) {
-//         selectedFiltersList.removeChild(itemToRemove);
-//       }
-//     }
-//   });
-// });
 
 
 // Add event listeners to filter options
@@ -353,7 +335,6 @@ clearAllBtn.addEventListener('click', function() {
     selectedFiltersList.removeChild(selectedFiltersList.firstChild);
   }
 });
-
 
 
 
