@@ -2947,12 +2947,6 @@ html[dir="ltr"] .input-group .form-control {
    -ms-transform: translate(6px, -8px);
    -o-transform: translate(6px, -8px);
 }
- /* .middle .slider .thumb.hover {
-   box-shadow: 0 0 0 10px rgba(154, 209, 161, 0.3764705882);
- }
- .middle .slider .thumb.active {
-   box-shadow: 0 0 0 20px rgba(154, 209, 161, 0.3764705882);
- } */
  
  input[type=range] {
    position: absolute;
@@ -2973,11 +2967,62 @@ html[dir="ltr"] .input-group .form-control {
    background-color: red;
    -webkit-appearance: none;
  }
+
+ .selected-filters {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 20px;
+ }
  
+ .selected-filters ul {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 8px;
+ }
+ 
+ .selected-filters li {
+   display: flex;
+   gap: 6px;
+   align-items: center;
+   margin-bottom: 5px;
+   background: var(--white);
+   padding: 4px 15px;
+   border-radius: 20px;
+   position: relative;
+   padding-inline-end: 8px;
+ }
+ 
+ .remove-filter-btn {
+   width: 18px;
+   height: 18px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 11px;
+   border-radius: 50%;
+   background-color: var(--red);
+   color: var(--white);
+   border: none;
+   cursor: pointer;
+   opacity: .5;
+ }
+ 
+ .remove-filter-btn:hover {
+   opacity: 1;
+ }
 
-
-
-
+ #clear-all-filters{
+   min-width: max-content;
+   width: auto;
+   height: fit-content;
+   padding-inline: 14px;
+   padding-block: 4px;
+   margin-bottom: 0;
+ }
+ 
 
 #filter {
    position: fixed;

@@ -247,6 +247,117 @@ $(document).ready(function () {
     $(".filter").toggleClass("filter-toggle");
   });
 
+// Add event listeners to filter options
+// const selectedFiltersList = document.getElementById('selected-filters-list');
+// const filterInputs = document.querySelectorAll('.form-check-input');
+
+// filterInputs.forEach(input => {
+//   input.addEventListener('change', function() {
+//     const label = this.nextElementSibling.textContent.trim();
+
+//     if (this.checked) {
+//       // Add selected filter if it's not already added
+//       let existingFilter = selectedFiltersList.querySelector(`[data-filter="${this.id}"]`);
+//       if (!existingFilter) {
+//         const li = document.createElement('li');
+//         li.textContent = label;
+//         li.setAttribute('data-filter', this.id);
+
+//         // For radio buttons, associate the filter with the radio group
+//         if (this.type === 'radio') {
+//           const groupName = this.name;
+//           const previousSelection = selectedFiltersList.querySelector(`[data-group="${groupName}"]`);
+//           if (previousSelection) {
+//             selectedFiltersList.removeChild(previousSelection);
+//           }
+//           li.setAttribute('data-group', this.name);
+//         }
+
+//         const removeBtn = document.createElement('button');
+//         removeBtn.innerHTML = '<i class="fas fa-times"></i>';
+//         removeBtn.className = 'remove-filter-btn';
+//         removeBtn.onclick = function() {
+//           document.getElementById(li.getAttribute('data-filter')).checked = false;
+//           selectedFiltersList.removeChild(li);
+//         };
+
+//         li.appendChild(removeBtn);
+//         selectedFiltersList.appendChild(li);
+//       }
+//     } else {
+//       // Remove unselected filter
+//       const itemToRemove = selectedFiltersList.querySelector(`[data-filter="${this.id}"]`);
+//       if (itemToRemove) {
+//         selectedFiltersList.removeChild(itemToRemove);
+//       }
+//     }
+//   });
+// });
+
+
+// Add event listeners to filter options
+const selectedFiltersList = document.getElementById('selected-filters-list');
+const filterInputs = document.querySelectorAll('.form-check-input');
+const clearAllBtn = document.getElementById('clear-all-filters');
+
+filterInputs.forEach(input => {
+  input.addEventListener('change', function() {
+    const label = this.nextElementSibling.textContent.trim();
+
+    if (this.checked) {
+      // Add selected filter if it's not already added
+      let existingFilter = selectedFiltersList.querySelector(`[data-filter="${this.id}"]`);
+      if (!existingFilter) {
+        const li = document.createElement('li');
+        li.textContent = label;
+        li.setAttribute('data-filter', this.id);
+
+        // For radio buttons, associate the filter with the radio group
+        if (this.type === 'radio') {
+          const groupName = this.name;
+          const previousSelection = selectedFiltersList.querySelector(`[data-group="${groupName}"]`);
+          if (previousSelection) {
+            selectedFiltersList.removeChild(previousSelection);
+          }
+          li.setAttribute('data-group', this.name);
+        }
+
+        const removeBtn = document.createElement('button');
+        removeBtn.className = 'remove-filter-btn';
+        removeBtn.innerHTML = '<i class="fas fa-times"></i>'; // Using Font Awesome icon
+        removeBtn.onclick = function() {
+          document.getElementById(li.getAttribute('data-filter')).checked = false;
+          selectedFiltersList.removeChild(li);
+        };
+
+        li.appendChild(removeBtn);
+        selectedFiltersList.appendChild(li);
+      }
+    } else {
+      // Remove unselected filter
+      const itemToRemove = selectedFiltersList.querySelector(`[data-filter="${this.id}"]`);
+      if (itemToRemove) {
+        selectedFiltersList.removeChild(itemToRemove);
+      }
+    }
+  });
+});
+
+// Function to clear all filters
+clearAllBtn.addEventListener('click', function() {
+  // Uncheck all inputs
+  filterInputs.forEach(input => input.checked = false);
+
+  // Remove all selected filters from the list
+  while (selectedFiltersList.firstChild) {
+    selectedFiltersList.removeChild(selectedFiltersList.firstChild);
+  }
+});
+
+
+
+
+
   $("#profile_nav").click(function () {
     $(".profile-nav").toggleClass("Pnav-toggle");
   });
