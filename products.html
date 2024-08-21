@@ -63,41 +63,35 @@
             </div>
         </div>
         <div class="middle-nav">
-            <div class="container-lg d-flex justify-content-between align-items-center">
-                <div class="col-4 col-md-3">
-                    <div class="logo">
-                        <a class="navbar-brand d-block m-0" href="index.html">
-                            <img src="images/d_logo.png" alt="DR Toys logo" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-8 col-lg-6">
-                    <div class="search-box">
-                        <select name="" id="">
-                            <option value="">الفئات</option>
-                            <option value="">ألعاب المحرکات</option>
-                            <option value="">إستشارات فی تنمیة المهارات</option>
-                            <option value="">ألعاب تنمیة المهارات</option>
-                            <option value="">الأدوات المدرسیة واللانش بوکس</option>
-                        </select>
-                        <input type="search" placeholder="  ابحث عن منتج .... " />
-                        <button>
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="phone-wrap">
-                        <div class="info-icon phone-icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="info-text phone-no">
-                            <span> مساعدة 24/7:</span>
-                            <a href="tel:+888-0000-000">0109887844</a>
-                        </div>
-                    </div>
-                </div>
+          <div class="container-lg d-flex justify-content-between align-items-center">
+            <div class="logo">
+              <a class="navbar-brand d-block m-0" href="index.html">
+                <img src="images/d_logo.png" alt="DR Toys logo" />
+              </a>
             </div>
+            <div class="search-box">
+              <select name="" id="">
+                <option value="">الفئات</option>
+                <option value="">ألعاب المحرکات</option>
+                <option value="">إستشارات فی تنمیة المهارات</option>
+                <option value="">ألعاب تنمیة المهارات</option>
+                <option value="">الأدوات المدرسیة واللانش بوکس</option>
+              </select>
+              <input type="search" placeholder="  ابحث عن منتج .... " />
+              <button>
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+            <div class="phone-wrap">
+              <div class="info-icon phone-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="info-text phone-no">
+                <span> مساعدة 24/7:</span>
+                <a href="tel:+888-0000-000">0109887844</a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="bottom-nav">
             <div class="navbar navbar-expand-lg navbar-light">
@@ -173,109 +167,134 @@
     <!-- filter -->
     <section class="mb-5">
         <div class="container-lg">
-          <div class="row gy-4 gx-5">
+          <div class="row gy-4">
             <div class="col-5 col-lg-3 filter">
               <div class="filter-header d-md-none">
                 <h5>التصفية</h5>
                 <button class="btn-close">
                 </button>
               </div>
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <!-- ترتيب حسب  -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                        العمر
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="sort" id="sort_by1">
-                            <label class="form-check-label" for="sort_by1">
-                              1-2
-                            </label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="sort" id="sort_by2">
-                            <label class="form-check-label" for="sort_by2">
-                              3-4
-                            </label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="sort" id="sort_by3">
-                            <label class="form-check-label" for="sort_by3">
-                              5-7
-                            </label>
-                          </div>
-                        </li>
-                      </ul>
+              <form action="">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="filter-opt">
+                    <!-- ترتيب حسب العمر-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                            العمر
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sort" id="sort_by1">
+                                <label class="form-check-label" for="sort_by1">
+                                  1-2
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sort" id="sort_by2">
+                                <label class="form-check-label" for="sort_by2">
+                                  3-4
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sort" id="sort_by3">
+                                <label class="form-check-label" for="sort_by3">
+                                  5-7
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="filter-opt">
+                    <!--  فئات   -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                          الفئات  
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="category1" id="category1">
+                                <label class="form-check-label" for="category1">
+                                  ألعاب المحرکات
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="category2" id="category2">
+                                <label class="form-check-label" for="category2">
+                                  إستشارات فی تنمیة المهارات
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="category3" id="category3">
+                                <label class="form-check-label" for="category3">
+                                  ألعاب تنمیة المهارات
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="category4" id="category4">
+                                <label class="form-check-label" for="category4">
+                                  الأدوات المدرسیة واللانش بوکس
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!--  فئات المنتجات  -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      فئات المنتجات 
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="category" id="category1">
-                            <label class="form-check-label" for="category1">
-                              ألعاب المحرکات
-                            </label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="category" id="category2">
-                            <label class="form-check-label" for="category2">
-                              إستشارات فی تنمیة المهارات
-                            </label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="category" id="category3">
-                            <label class="form-check-label" for="category3">
-                              ألعاب تنمیة المهارات
-                            </label>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="category" id="category4">
-                            <label class="form-check-label" for="category4">
-                              الأدوات المدرسیة واللانش بوکس
-                            </label>
-                          </div>
-                        </li>
-                      </ul>
+                <!-- البحث حسب السعر -->
+                <div class="filter-opt">
+                  <div class="middle">
+                    <span>السعر</span>
+                    <div class="multi-range-slider">
+                      <input type="range" id="input-left" min="0" max="100" value="0">
+                      <input type="range" id="input-right" min="0" max="100" value="100">
+            
+                      <div class="slider">
+                        <div class="track"></div>
+                        <div class="range"></div>
+                        <div class="thumb left">
+                          <div class="dot"></div>
+                        </div>
+                        <div class="thumb right">
+                          <div class="dot"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prices">
+                      <!-- <span>السعر</span> -->
+                      <span class="price-to">400 ج.م</span>
+                      <span> - </span>
+                      <span class="price-from">100 ج.م</span>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- البحث حسب السعر -->
-              <div class="priceRange py-3">
-                <h6 class="mb-3">البحث حسب السعر</h6>
-                <div class="d-flex gap-2">
-                  <input class="form-control py-1" placeholder="من" type="number" name="" min="0">
-                  <input class="form-control py-1" placeholder="الى" type="number" name="" min="0">
-                </div>
-              </div>
-              
-              <button type="button" class="main-btn">تصفية</button>
+                <button type="button" class="main-btn">تصفية</button>
+              </form>
             </div>
             <div class="col-md-9">
                 <div class="products">
@@ -548,6 +567,8 @@
         </div>
       </section>
 
+      <button id="filter"><i class="bi bi-sliders fs-5"></i></button>
+
     <footer>
         <div class="container-lg">
             <!-- children images -->
@@ -695,29 +716,8 @@
         </div>
     </footer>
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-                lists, etc.
-            </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-bs-toggle="dropdown">
-                    Dropdown button
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
+
 
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -734,23 +734,95 @@
     <!-- rateyo script -->
     <script src="js/jquery.rateyo.min.js"></script>
 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+
     <!-- wow script -->
     <!-- <script src="js/wow.min.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-
-    <!-- intlTelInput script -->
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/intlTelInput.min.js"></script>
-    <script>
-        const input = document.querySelector("#mobile");
-        window.intlTelInput(input, {
-            utilsScript:
-                "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/utils.js",
-        });
-    </script>
-
+   
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
+    
+    <script>
+      var inputLeft = document.getElementById("input-left");
+      var inputRight = document.getElementById("input-right");
+      var thumbLeft = document.querySelector(".slider > .thumb.left");
+      var thumbRight = document.querySelector(".slider > .thumb.right");
+      var range = document.querySelector(".slider > .range");
+      var priceFrom = document.querySelector(".price-from");
+      var priceTo = document.querySelector(".price-to");
+
+      if (inputLeft !== null) {
+          function setLeftValue() {
+              var _this = inputLeft,
+                  min = parseInt(_this.min),
+                  max = parseInt(_this.max);
+
+              _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
+
+              var percent = ((_this.value - min) / (max - min)) * 100;
+
+              thumbLeft.style.left = percent + "%";
+              range.style.left = percent + "%";
+
+              // Calculate price based on range value
+              var price = parseInt(inputLeft.value) * 3; // Adjust this formula based on your requirements
+              priceFrom.textContent = price + " ج.م";
+          }
+          setLeftValue();
+
+          function setRightValue() {
+              var _this = inputRight,
+                  min = parseInt(_this.min),
+                  max = parseInt(_this.max);
+
+              _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
+
+              var percent = ((_this.value - min) / (max - min)) * 100;
+
+              thumbRight.style.right = (100 - percent) + "%";
+              range.style.right = (100 - percent) + "%";
+
+              // Calculate price based on range value
+              var price = parseInt(inputRight.value) * 3; // Adjust this formula based on your requirements
+              priceTo.textContent = price + "  ج.م";
+          }
+          setRightValue();
+
+          inputLeft.addEventListener("input", setLeftValue);
+          inputRight.addEventListener("input", setRightValue);
+
+          // Add event listeners for thumb hover and active states
+          // These listeners are not directly related to updating the price
+          inputLeft.addEventListener("mouseover", function() {
+              thumbLeft.classList.add("hover");
+          });
+          inputLeft.addEventListener("mouseout", function() {
+              thumbLeft.classList.remove("hover");
+          });
+          inputLeft.addEventListener("mousedown", function() {
+              thumbLeft.classList.add("active");
+          });
+          inputLeft.addEventListener("mouseup", function() {
+              thumbLeft.classList.remove("active");
+          });
+
+          inputRight.addEventListener("mouseover", function() {
+              thumbRight.classList.add("hover");
+          });
+          inputRight.addEventListener("mouseout", function() {
+              thumbRight.classList.remove("hover");
+          });
+          inputRight.addEventListener("mousedown", function() {
+              thumbRight.classList.add("active");
+          });
+          inputRight.addEventListener("mouseup", function() {
+              thumbRight.classList.remove("active");
+          });
+      }
+          
+    </script>
 </body>
 
 </html>
