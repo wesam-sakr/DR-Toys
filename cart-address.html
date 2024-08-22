@@ -253,9 +253,6 @@
                 تعديل
               </button>
             </div>
-            <button type="button" class="btn main-btn w-auto px-5">
-              اضافة واستمرار
-            </button>
           </div>
           <div class="py-3 form-address">
             <form action="">
@@ -320,6 +317,10 @@
               </div>
             </form>
           </div>
+          <!-- ==== start Button trigger login modal ==== -->
+          <button type="button" class="alert alert-secondary" role="alert" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            او سجل دخولك معنا لحفظ واسترجاع العناوين بسهولة 
+          </button>
         </div>
         <!-- order summary -->
         <div class="col-lg-4 col-12">
@@ -564,6 +565,44 @@
       <!-- end footer shape image -->
     </footer>
     <!-- ==== end footer ==== -->
+
+    <!-- ==== start login modal ==== -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row gx-0 align-items-center">
+              <div class="col-6">
+                <div class="login-data">
+                  <h4 class="mb-2 fw-bold" style="color: var(--red);">سجل معنا</h4>
+                  <p class="mb-4">كن جزء من عالمنا</p>
+                  <form action="">
+                    <div class="form-group mb-3">
+                      <input type="text" class="form-control" placeholder="البريد الالكتروني">
+                    </div>
+                    <div class="form-group mb-3">
+                      <input type="text" class="form-control" placeholder="كلمة السر">
+                    </div>
+                  </form>
+                  <p>
+                    <span>ليس لديك حساب ؟</span>
+                    <a href="" style="color: var(--blue);">انشاء حساب</a>
+                  </p>
+                  <div class="d-flex align-items-center mt-4 gap-2">
+                    <button type="button" class="btn main-btn">التسجيل</button>
+                    <button type="button" class="btn main-outline-btn" data-bs-dismiss="modal">اغلاق</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <img class="login-img" src="images/mobile BG.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== end login modal ==== -->
 
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>

@@ -795,6 +795,10 @@ img {
    z-index: 2;
 }
 
+.note{
+   background: rgba(255, 0, 0, 0.007);
+}
+
 
 /* -------- top nav -------- */
 
@@ -1810,7 +1814,7 @@ header .parent .cat_1 *:not(.owl-dots, .owl-dots *) {
    background-color: var(--sky) !important;
 }
 
-:not(.input-group):has(i):hover>i {
+:not(.input-group,.quantity):has(i):hover>i {
    animation: toBottomFromTop .5s forwards;
    -webkit-animation: toBottomFromTop .5s forwards;
 }
