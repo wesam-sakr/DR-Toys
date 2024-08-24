@@ -194,182 +194,125 @@
         <!-- <img src="images/footer-bottom-shape-3.svg" alt="" /> -->
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-          <li class="breadcrumb-item active" aria-current="page">السلة</li>
+          <li class="breadcrumb-item active" aria-current="page">الملف الشخصي</li>         
+          <li class="breadcrumb-item active" aria-current="page">تعديل كلمةالسر</li>
         </ol>
       </nav>
     </div>
     <!-- ==== end breadcrumb ==== -->
 
-    <!-- ==== start cart ==== -->
-    <div class="cart container-lg mb-5">
-      <div class="row">
-        <!-- products -->
-        <div class="col-lg-8 col-12">
-          <!-- cart heading -->
-          <div
-            class="cart-title mb-3 d-flex justify-content-between align-items-center"
-          >
-            <h5 class="title">عنوان الشحن</h5>
-            <span> ( 2 ) </span>
-          </div>
-          <!--  products wrapper -->
-          <div class="cart-products-wrapper">
-            <div class="cart-item">
-              <div class="d-flex gap-3 align-items-center">
-                <input
-                  id="addr1"
-                  class="form-check-input"
-                  type="radio"
-                  name="payment"
-                  checked
-                />
-                <label class="pe-3" for="addr1">
-                  <h6 class="mb-2">الدولة: مصر , المدينة: المحلة الكبرى</h6>
-                  <div>الشارع: الجيش , رقم المبنى: 9, رقم الطابق: 4</div>
-                </label>
+    <!-- profile -->
+    <section class="profile mb-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <div class="profile-nav">
+              <div class="profile-header d-md-none">
+                <h5>الملف الشخصي</h5>
+                <button class="btn-close"></button>
               </div>
-              <button class="text-edit">
-                <i class="fa-solid fa-pen-to-square"></i>
-                تعديل
-              </button>
-            </div>
-            <div class="cart-item">
-              <div class="d-flex gap-3 align-items-center">
-                <input
-                  id="addr2"
-                  class="form-check-input"
-                  type="radio"
-                  name="payment"
-                />
-                <label for="addr2" class="pe-3">
-                  <h6 class="mb-2">الدولة: مصر , المدينة: السباع</h6>
-                  <div>
-                    الشارع: متولي المدبولي , رقم المبنى: 9, رقم الطابق: 12
-                  </div>
-                </label>
-              </div>
-              <button class="text-edit">
-                <i class="fa-solid fa-pen-to-square"></i>
-                تعديل
-              </button>
+              <ul class="white-bg-wrapper nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="profile.html">
+                    <div class="icon">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span> المعلومات الشخصية </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="changePass.html">
+                    <div class="icon">
+                      <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <span> تعديل كلمة السر </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="orders.html">
+                    <div class="icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <span> طلباتي </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="addresses.html">
+                    <div class="icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span> العناويين </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="favourite.html">
+                    <div class="icon">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <span> المفضلة </span>
+                  </a>
+                </li>
+                <li class="">
+                  <button class="logout">
+                    <img src="images/power-button.svg" alt="" style="width: 16px" />
+                    <span> تسجيل خروج </span>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="py-3 form-address">
-            <form action="">
-              <div class="cart-item">
-                <h6 class="mb-3">اضافه عنوان جديد</h6>
-                <div class="row gy-3">
-                  <div class="col-md-6 col-12">
-                    <select
-                      class="form-control"
-                      name="city_name"
-                      id="city_name"
-                    >
-                      <option value="">المدينة</option>
-                      <option value="1" data-zone="1">Cairo</option>
-                      <option value="2" data-zone="1">Alexandria</option>
-                      <option value="69" data-zone="3">
-                        ElMahlla Elkoubra
-                      </option>
-                      <option value="">المدينة</option>
-                      <option value="1" data-zone="1">Cairo</option>
-                      <option value="2" data-zone="1">Alexandria</option>
-                      <option value="69" data-zone="3">
-                        ElMahlla Elkoubra
-                      </option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 col-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="المنطقة"
-                    />
-                  </div>
-                  <div class="col-md-6 col-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="الشارع"
-                    />
-                  </div>
-                  <div class="col-md-6 col-12">
-                    <input
-                      type="number"
-                      min="1"
-                      class="form-control"
-                      placeholder="رقم المبنى"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      name=""
-                      class="form-control"
-                      rows="4"
-                      placeholder="تفاصيل العنوان"
-                    ></textarea>
-                  </div>
+          <div class="col col-md-8 col-lg-9">
+            <div class="profile-data white-bg-wrapper">
+            <button id="profile_nav" class="d-md-none">
+              <h5>الملف الشخصي</h5>
+              <i class="bi bi-sliders fs-5"></i>
+            </button>
+            <form action="" method="post">
+              <!-- profile-picture -->
+              <div class="row gy-4 mb-3">
+                <!-- كلمة السر الحالية -->
+                <div class="col-12">
+                  <input
+                    class="form-control"
+                    name="currentPass"
+                    value=""
+                    placeholder="كلمة السر الحالية"
+                    type="password"
+                  />
                 </div>
-                <button class="main-btn mt-4" style="background: var(--sky) !important;">
-                  <i class="fa-solid fa-plus"></i>
-                  اضافة
-                </button>
+                <!-- كلمة المرور الجديدة -->
+                <div class="col-12 col-lg-6">
+                  <input
+                    class="form-control"
+                    name="newPass"
+                    value=""
+                    type="password"
+                    placeholder="كلمة المرور الجديدة "
+                  />
+                </div>
+                <!-- تأكيد كلمة المرور الجديدة -->
+                <div class="col-12 col-lg-6">
+                  <input
+                    class="form-control"
+                    name="confPass"
+                    value=""
+                    type="password"
+                    placeholder="تأكيد كلمة المرور الجديدة "
+                  />
+                </div>
               </div>
+              <button
+                type="submit"
+                role="button"
+                class="main-btn w-auto px-5 mt-3"
+              >
+                <div class="text px-4">حفظ</div>
+              </button>
             </form>
-          </div>
-          <!-- ==== start Button trigger login modal ==== -->
-          <button type="button" class="alert alert-primary w-100" role="alert" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            او  اضغط هنا وسجل دخولك معنا لحفظ واسترجاع العناوين بسهولة 
-          </button>
-        </div>
-        <!-- order summary -->
-        <div class="col-lg-4 col-12">
-          <div class="order-summary ps-3">
-            <h5 class="title mb-3">ملخص الطلب</h5>
-            <div class="cart-item">
-              <form action="">
-                <h6 class="fw-bold mb-3">ادخل كود الخصم</h6>
-                <div class="input-group">
-                  <span class="input-group-text">
-                    <i class="fa-solid fa-receipt"></i>
-                  </span>
-                  <input type="text" class="form-control" aria-label="Amount" />
-                  <span class="input-group-text">
-                    <button type="button">تطبيق</button>
-                  </span>
-                </div>
-              </form>
-            </div>
-
-            <div class="cart-item">
-              <div class="summary">
-                <span>عدد المنتجات </span>
-                <span>2</span>
-              </div>
-              <div class="summary">
-                <span>السعر</span>
-                <span>1000 ج.م </span>
-              </div>
-              <div class="summary">
-                <span>الخصم</span>
-                <span>10 ج.م </span>
-              </div>
-              <div class="summary">
-                <span>الشحن</span>
-                <span>300 ج.م </span>
-              </div>
-              <div class="summary count-total fw-bold">
-                <span>الإجمالي</span>
-                <span>500 ج.م </span>
-              </div>
-            </div>
-
-            <a href="cart-payment.html" class="btn main-btn"> تأكيد الطلب </a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- ==== end cart ==== -->
+    </section>
 
     <!-- ==== start footer ==== -->
     <footer>
@@ -566,44 +509,6 @@
     </footer>
     <!-- ==== end footer ==== -->
 
-    <!-- ==== start login modal ==== -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="row gx-0 align-items-center">
-              <div class="col-6">
-                <div class="login-data">
-                  <h4 class="mb-2 fw-bold" style="color: var(--red);">سجل معنا</h4>
-                  <p class="mb-4">كن جزء من عالمنا</p>
-                  <form action="">
-                    <div class="form-group mb-3">
-                      <input type="text" class="form-control" placeholder="البريد الالكتروني">
-                    </div>
-                    <div class="form-group mb-3">
-                      <input type="text" class="form-control" placeholder="كلمة السر">
-                    </div>
-                  </form>
-                  <p>
-                    <span>ليس لديك حساب ؟</span>
-                    <a href="" style="color: var(--blue);">انشاء حساب</a>
-                  </p>
-                  <div class="d-flex align-items-center mt-4 gap-2">
-                    <button type="button" class="btn main-btn">التسجيل</button>
-                    <button type="button" class="btn main-outline-btn" data-bs-dismiss="modal">اغلاق</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <img class="login-img" src="images/mobile BG.jpg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ==== end login modal ==== -->
-
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
@@ -621,8 +526,6 @@
 
     <!-- wow script -->
     <!-- <script src="js/wow.min.js"></script> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>

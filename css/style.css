@@ -430,6 +430,9 @@ iframe {
    -o-border-radius: 25px;
    margin-bottom: 1rem;
 }
+.main-btn:hover{
+   background: var(--sky) !important;
+}
 
 .main-outline-btn {
    border: 1px solid var(--red) !important;
@@ -848,42 +851,20 @@ img {
    align-items: center;
    padding: 0px 15px;
    padding-inline-end: 25px;
-   border-inline-end: 1px solid rgb(224, 148, 148);
    border-radius: 0;
 }
 
 .middle-nav .nice-select:after {
-   /* inset-inline-start: 22px;
-   inset-inline-end: unset;
-   top: 50%;
-   border-bottom: 2px solid #fff;
-   border-inline-start: 2px solid #fff; */
    border-color: var(--red);
 }
 
-/* .middle-nav .nice-select::before {
-   content: '';
-   position: absolute;
-   inset-inline-end: 12px;
-   inset-inline-start: unset;
-   top: 50%;
-   transform: translateY(-50%);
-   width: 24px;
-   height: 24px;
-   border-radius: 50%;
-   background: var(--red);
-} */
-
 .middle-nav .search-box {
-   /* width: 80%; */
    min-width: 40%;
    max-width: 50%;
    margin: auto;
-   /*overflow: hidden;*/
    display: flex;
    align-self: center;
    height: 50px;
-   border: 1px solid rgb(224, 148, 148);
    border-radius: 50px;
    position: relative;
    background: #F8F8F8;
@@ -910,10 +891,6 @@ nav .nice-select {
 }
 
 .middle-nav .search-box i {
-   /* position: absolute;
-   inset-inline-start: 15px;
-   top: 50%;
-   transform: translateY(-50%); */
    font-size: 16px;
    color: #BFBFBF;
    display: contents;
@@ -927,6 +904,18 @@ nav .nice-select {
    font-size: 16px;
    border-radius: 0px;
    background: transparent;
+   position: relative;
+}
+.middle-nav .search-box .nice-select::before{
+   content: '';
+   color: var(--red);
+   position: absolute;
+   top: 8px;
+   bottom: 8px;
+   inset-inline-end: 0;
+   width: 1px;
+   display: block;
+   border-inline-start: 1px solid var(--red) !important;
 }
 
 .middle-nav .search-box button {
@@ -2744,16 +2733,12 @@ a.quantity:hover {
    border-radius: 20px;
 }
 
-/* .gallery .photo a{
-   display: block;
-   cursor: pointer;
-} */
 
 .gallery .photo img {
    filter: brightness(.9);
    transition: .4s;
    height: 265px;
-   object-fit: contain;
+   object-fit: cover;
    -webkit-filter: brightness(.9);
 }
 
@@ -2767,11 +2752,11 @@ a.quantity:hover {
 
 /* --------== products page ==-------- */
 
-.profile-nav {
+/* .profile-nav {
    border-radius: 12px;
    padding: 1.5rem;
    background: var(--white);
-}
+} */
 
 .filter-opt,
 .cart-item {
@@ -2995,30 +2980,52 @@ input[type=range]::-webkit-slider-thumb {
    color: #2A2A2A;
    margin-bottom: 1rem;
    font-weight: bold;
+   background: var(--white);
+   border-radius: 70px;
 }
 
-.profile-nav .nav-link.active {
-   color: var(--white);
-   background: var(--sky);
-   border-radius: 10px;
+.profile-nav .nav-link:hover{
+   background: #02c4b21f;
 }
 
-.profile-nav .nav-link i {
+
+.profile-nav .nav-link .icon {
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 34px;
-   height: 34px;
+   width: 38px;
+   height: 38px;
    border-radius: 50%;
-   background: var(--white);
-   color: #919191;
-}
-
-.profile-nav .nav-link.active i {
+   background: #02c4b21f ;
    color: var(--sky);
+   transition: all .3s;
+}
+.profile-nav .nav-link:hover .icon{
+   background: var(--sky);
+   color: var(--white);
+}
+.profile-nav .nav-link.active {
+   color: var(--white);
+   background: var(--sky);
 }
 
+.profile-nav .nav-link.active .icon {
+   color: var(--sky);
+   background: var(--white);
+}
 
+/* .profile-data{
+   margin-top: 60px;
+} */
+.profile-data.white-bg-wrapper{
+   height: auto;
+}
+.profile-data .text-edit{
+   background: var(--red) !important;
+}
+.profile-data .text-edit:hover{
+   background: var(--sky) !important;
+}
 .profile .profile-pic-icon {
    position: absolute;
    top: 0%;
@@ -3030,7 +3037,7 @@ input[type=range]::-webkit-slider-thumb {
    justify-content: center;
    z-index: 3;
    opacity: 0;
-   background-color: #56878b57;
+   background-color: #02c4b21f;
    color: #fff;
    font-size: xx-large;
    border-radius: 0.35rem;
@@ -3038,14 +3045,19 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .profile .profile-pic {
-   width: 227px;
-   border-radius: 20px;
+   width: 180px;
+   /* margin-top: -90px; */
+   /* margin-inline: auto; */
+   aspect-ratio: 1/1;
+   border-radius: 50%;
    overflow: hidden;
-   height: 198px;
+   /* height: 150px; */
    margin-bottom: 36px;
-   border-radius: 0.5rem;
-   background-color: transparent !important;
-   border: 1px solid #E5E5E5;
+   padding: 4px;
+   /* border-radius: 0.5rem; */
+   /* background-color: transparent !important; */
+   border: 1px solid var(--lite);
+   background: radial-gradient(rgba(237, 251, 250, 0) 0%, #EDFBFA 100%);
 }
 
 .profile .profile-pic img {
@@ -3054,11 +3066,9 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .profile .profile-pic input {
+   cursor: pointer;
    position: absolute;
-   top: 0;
-   bottom: 0;
-   right: 0;
-   left: 0;
+   inset: 0;
    z-index: 10;
    opacity: 0;
 }
@@ -3072,16 +3082,17 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .logout {
-   color: #ff0000;
+   color: #e50b4e;
    display: flex;
    width: 100%;
    align-items: center;
-   justify-content: center;
+   /* justify-content: center; */
    gap: 10px;
    background-color: transparent;
    font-weight: bold;
    margin-top: 1rem;
    padding-top: 1rem;
+   padding-inline-start: 1.8rem;
    border-top: 1px solid #E8E8E8;
 }
 
