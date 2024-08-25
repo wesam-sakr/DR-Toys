@@ -178,7 +178,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
                 <li class="breadcrumb-item active" aria-current="page">الملف الشخصي</li>
-                <li class="breadcrumb-item active" aria-current="page">المفضلة</li>
+                <li class="breadcrumb-item active" aria-current="page">طلباتي</li>
             </ol>
         </nav>
     </div>
@@ -212,7 +212,7 @@
                               </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="orders.html">
+                              <a class="nav-link active" href="orders.html">
                                 <div class="icon">
                                   <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
@@ -228,7 +228,7 @@
                               </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link active" href="favourite.html">
+                              <a class="nav-link" href="favourite.html">
                                 <div class="icon">
                                   <i class="fa-solid fa-heart"></i>
                                 </div>
@@ -251,200 +251,173 @@
                             <i class="bi bi-sliders fs-5"></i>
                         </button>
                         <!-- ==== start our products ==== -->
-                        <div class="products">
-                            <div class="row gy-4 row-cols-2 row-cols-lg-3">
-                                <div class="col">
-                                    <div class="product">
-                                        <div class="card">
-                                            <a href="productDetails.html" class="link"></a>
-                                            <button class="fav">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </button>
-                                            <div class="card-img-top">
-                                                <img src="images/product_01.png" alt="..." />
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <div class="Stars" style="--rating: 4"></div>
-                                                <div class="card-title">
-                                                    <p class="fw-bold">العاب اطفال</p>
-                                                </div>
-                                                <div
-                                                    class="prices d-flex gap-2 align-items-center justify-content-center">
-                                                    <p class="card-price">
-                                                        <span> 700 ج.م</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a data-bs-toggle="modal" href="" role="button">
-                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                    <span>إضافة للسلة</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                        <div class="orders">
+                            <div class="ord-head ">
+                                <div class="row">
+                                    <div class="col">
+                                        <span>رقم الطلب</span>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="product">
-                                        <div class="card">
-                                            <a href="productDetails.html" class="link"></a>
-                                            <button class="fav">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </button>
-                                            <div class="card-img-top">
-                                                <img src="images/product_03.png" alt="..." />
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <div class="Stars" style="--rating: 4"></div>
-                                                <div class="card-title">
-                                                    <p class="fw-bold">العاب اطفال</p>
-                                                </div>
-                                                <div
-                                                    class="prices d-flex gap-2 align-items-center justify-content-center">
-                                                    <p class="card-price">
-                                                        <span> 700 ج.م</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a data-bs-toggle="modal" href="" role="button">
-                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                    <span>إضافة للسلة</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="col d-none d-md-block">
+                                        <span>حالة الطلب</span>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="product">
-                                        <div class="card">
-                                            <a href="productDetails.html" class="link"></a>
-                                            <span class="badge discount">20%</span>
-                                            <button class="fav">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </button>
-                                            <div class="card-img-top">
-                                                <img src="images/product_04.png" alt="..." />
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <div class="Stars" style="--rating: 4"></div>
-                                                <div class="card-title">
-                                                    <p class="fw-bold">العاب اطفال</p>
-                                                </div>
-                                                <div
-                                                    class="prices d-flex gap-2 align-items-center justify-content-center">
-                                                    <p class="card-price">
-                                                        <span> 700 ج.م</span>
-                                                    </p>
-                                                    <p class="old-price">767 ج.م</p>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a data-bs-toggle="modal" href="" role="button">
-                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                    <span>إضافة للسلة</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="col">
+                                        <span>تاريخ الطلب</span>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="product">
-                                        <div class="card">
-                                            <a href="productDetails.html" class="link"></a>
-                                            <button class="fav">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </button>
-                                            <div class="card-img-top">
-                                                <img src="images/product_18.png" alt="..." />
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <div class="Stars" style="--rating: 4"></div>
-                                                <div class="card-title">
-                                                    <p class="fw-bold">العاب اطفال</p>
-                                                </div>
-                                                <div
-                                                    class="prices d-flex gap-2 align-items-center justify-content-center">
-                                                    <p class="card-price">
-                                                        <span> 700 ج.م</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a data-bs-toggle="modal" href="" role="button">
-                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                    <span>إضافة للسلة</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="col d-none d-md-block">
+                                        <span>عدد المنتجات</span>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="product">
-                                        <div class="card">
-                                            <a href="productDetails.html" class="link"></a>
-                                            <button class="fav">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </button>
-                                            <div class="card-img-top">
-                                                <img src="images/product_17.png" alt="..." />
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <div class="Stars" style="--rating: 4"></div>
-                                                <div class="card-title">
-                                                    <p class="fw-bold">العاب اطفال</p>
-                                                </div>
-                                                <div
-                                                    class="prices d-flex gap-2 align-items-center justify-content-center">
-                                                    <p class="card-price">
-                                                        <span> 700 ج.م</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a data-bs-toggle="modal" href="" role="button">
-                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                    <span>إضافة للسلة</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="col">
+                                        <span>الاجمالى</span>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="product">
-                                        <div class="card">
-                                            <a href="productDetails.html" class="link"></a>
-                                            <span class="badge discount">20%</span>
-                                            <button class="fav">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </button>
-                                            <div class="card-img-top">
-                                                <img src="images/product_06.png" alt="..." />
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <div class="Stars" style="--rating: 4"></div>
-                                                <div class="card-title">
-                                                    <p class="fw-bold">العاب اطفال</p>
-                                                </div>
-                                                <div
-                                                    class="prices d-flex gap-2 align-items-center justify-content-center">
-                                                    <p class="card-price">
-                                                        <span> 700 ج.م</span>
-                                                    </p>
-                                                    <p class="old-price">767 ج.م</p>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a data-bs-toggle="modal" href="" role="button">
-                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                    <span>إضافة للسلة</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="col">
+                                        <span>التفاصيل</span>
                                     </div>
                                 </div>
                             </div>
+                            <div class="white-bg-wrapper mb-3">
+                                <a class="text-center ord  row" data-bs-toggle="collapse" href="#ord1" role="button" aria-expanded="false" aria-controls="ord1">
+                                    <div class="col">
+                                        <span class="ord-blue">#12354</span>
+                                    </div>
+                                    <div class="col d-none d-md-block">
+                                        <span>معلق</span>
+                                    </div>
+                                    <div class="col">
+                                        <span>27-6-2021</span>
+                                    </div>
+                                    <div class="col d-none d-md-block">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="col">
+                                        <span>1632 ج.م</span>
+                                    </div>
+                                    <div class="col">
+                                        <span  class="ord-blue">
+                                            التفاصيل
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="ord1">
+                                <div class="card card-body">
+                                    <div class="">
+                                        <h5>حالة الطلب </h5>
+                                        <div class="Track-shipment-wizard mb-3">
+                                            <div class="steps-container">
+                                              <div class="step step1 finish">تأكيد الطلب</div>
+                                              <div class="step finish">تحضير الطلب</div>
+                                              <div class="step finish">في الطريق</div>
+                                              <div class="step step4">تم الإستلام</div>
+                                            </div>
+                                            <!-- One "tab" for each step in the form: -->
+                                            <div class="tab-container">
+                                              <div class="tab finish">
+                                                <img src="images/prepard.svg" alt="">
+                                              </div>
+                                              <div class="tab finish">
+                                                <img src="images/shipped.svg" alt="">
+                                              </div>
+                                              <div class="tab finish">
+                                                <img src="images/way.svg" alt="">
+                                              </div>
+                                              <div class="tab">
+                                                <img src="images/delivered.svg" alt="">
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="order-payment">
+                                        <div class="d-flex gap-2">
+                                            <h5>طريقة الدفع</h5>
+                                            <span>(الدفـع عنـد الاستـلام)</span>
+                                        </div>
+                                        <div class="table-responsive mt-3">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>المجموع</th>
+                                                        <th>الشحن</th>
+                                                        <th>الخصم</th>
+                                                        <th>الاجمالى</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td> 270.50 ج.م</td>
+                                                    <td> 0.00 ج.م</td>
+                                                    <td> 270.50 ج.م</td>
+                                                    <td> 900 ج.م</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="">
+                                        <h5>عنوان الشحن</h5>
+                                        <div class="addr">
+                                             الدولة: مصر , المدينة: المحلة الكبرى,
+                                            الشارع: الجيش , رقم المبنى: 9, رقم الطابق: 4
+                                        </div>
+                                    </div>
+                                    
+                                    <h5>المنتجات</h5>
+                                    <div class="table-responsive mt-3">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>الصورة</th>
+                                                    <th>اسم المنتج</th>
+                                                    <th>الكمية</th>
+                                                    <th>السعر</th>
+                                                    <th>الاجمالى</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/product_01.png" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <a href="productDetails.html" class="ord-blue">عربيه اطفال</a>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>300 ج.م</td>
+                                                    <td>300 ج.م</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="white-bg-wrapper">
+                                <a class="text-center ord  row" href="orderDetails.html" role="button" aria-expanded="false" aria-controls="ord2">
+                                    <div class="col">
+                                        <span class="ord-blue">#12354</span>
+                                    </div>
+                                    <div class="col d-none d-md-block">
+                                        <span>معلق</span>
+                                    </div>
+                                    <div class="col">
+                                        <span>27-6-2021</span>
+                                    </div>
+                                    <div class="col d-none d-md-block">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="col">
+                                        <span>1632 ج.م</span>
+                                    </div>
+                                    <!-- <div class="col">
+                                        <span class="ord-blue">
+                                            التفاصيل
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </span>
+                                    </div> -->
+                                </a>
+                            </div>
                         </div>
+
                         <!-- ==== end our products ==== -->
                     </div>
                 </div>

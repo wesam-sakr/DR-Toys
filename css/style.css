@@ -2956,7 +2956,7 @@ input[type=range]::-webkit-slider-thumb {
    justify-content: space-between;
    align-items: center;
    margin-bottom: 0.75rem;
-   padding-block: 1.25rem;
+   padding: 1.25rem;
    border-bottom: 1px solid #dddddd;
 }
 
@@ -3014,11 +3014,11 @@ input[type=range]::-webkit-slider-thumb {
    background: var(--white);
 }
 
-/* .profile-data{
-   margin-top: 60px;
-} */
 .profile-data.white-bg-wrapper{
    height: auto;
+}
+.white-bg-wrapper.flex-column{
+   padding: 2rem 1rem;
 }
 .profile-data .text-edit{
    background: var(--red) !important;
@@ -3045,17 +3045,12 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .profile .profile-pic {
-   width: 180px;
-   /* margin-top: -90px; */
-   /* margin-inline: auto; */
+   width: 160px;
    aspect-ratio: 1/1;
    border-radius: 50%;
    overflow: hidden;
-   /* height: 150px; */
    margin-bottom: 36px;
    padding: 4px;
-   /* border-radius: 0.5rem; */
-   /* background-color: transparent !important; */
    border: 1px solid var(--lite);
    background: radial-gradient(rgba(237, 251, 250, 0) 0%, #EDFBFA 100%);
 }
@@ -3099,7 +3094,156 @@ input[type=range]::-webkit-slider-thumb {
 .profile .cart .cart-address {
    margin-top: 0;
 }
+.orders .white-bg-wrapper{
+   border-radius: 12px;
+   padding: 1rem .5rem;
+}
+.orders .card{
+   border: 0;
+    border-top: 1px solid var(--lite);
+    border-radius: 0;
+    margin-top: 10px;
+}
+.orders .ord{
+   color: var(--black);
+}
+.ord-blue,.orders .ord i{
+   color: var(--blue);
+}
+.ord-head {
+   background: #0271ab90;
+   color: var(--white);
+   border-radius: 12px;
+   padding: .5rem;
+   text-align: center;
+   margin-bottom: 1rem;
+}
 
+.orders .table th {
+   background-color: #FCFCFC;
+   padding: 10px;
+   font-size: 13px;
+}
+.orders .table tr {
+   border-bottom: 15px solid #fff;
+}
+.orders .table td {
+   padding: 10px;
+   vertical-align: middle;
+   color: #909090;
+   font-size: 14px;
+   background-color: #fcfcfc;
+}
+.addr{
+   color: #909090;
+   font-size: 14px;
+   background-color: #fcfcfc;
+   padding: 10px;
+   margin-block: 1rem;
+}
+.orders .table td img {
+   width: 60px;
+   height: 60px;
+   min-width: 50px;
+   border-radius: 5px;
+   object-fit: cover;
+}
+.Track-shipment-wizard {
+   background-color: #ffffff;
+   /* margin: 50px auto;
+   font-family: Raleway;
+   padding: 40px; */
+   width: 100%;
+   min-width: 300px;
+ }
+ .profile-data .tab{
+   opacity: 0.5;
+
+}
+.profile-data .tab.active, .profile-data .tab.finish{
+   opacity: 1;
+}
+  /* Make circles that indicate the steps of the form: */
+  .steps-container{
+   width: 100%;
+   margin:  0 auto 30px;
+  border-bottom: 1px solid var(--lite);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  text-align: center;
+}
+ .Track-shipment-wizard .step{
+   padding: 20px 0;
+   border: none;  
+   color: var(--dark);
+   display: inline-block;
+   opacity: 0.6;
+   flex: 1;
+   position: relative;
+ }
+ .Track-shipment-wizard .tab{
+   display: block;
+}
+
+ .Track-shipment-wizard .step.active, .Track-shipment-wizard .step.finish{
+    opacity: 1;
+ }
+ .Track-shipment-wizard .step.active::after, .Track-shipment-wizard .step.finish::after {
+   content: "";
+   opacity: 1;
+   width: 100%;
+   height: 2px;
+   background: var(--yellow);
+   position: absolute;
+   bottom: 0;
+   right: 0%;
+   transform: translateY(50%);
+ }
+ .Track-shipment-wizard .step1.active::after, .Track-shipment-wizard .step1.finish::after {
+   content: "";
+   width: 50%;
+   right: 50%;
+ }
+ .Track-shipment-wizard .step4.active::after, .Track-shipment-wizard .step4.finish::after {
+   content: "";
+   width: 50%;
+   left: 50%;
+ }
+ .Track-shipment-wizard .step.active::before, .Track-shipment-wizard .step.finish::before {
+   content: "\2713";
+   width: 30px;
+   height: 30px;
+   background-color: var(--yellow);
+   position: absolute;
+   bottom: 0;
+   right: 50%;
+   color: var(--white);
+   vertical-align:sub;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   border-radius: 50%;
+   z-index:9;
+   transform: translate(50%,50%);
+}
+.profile-data .tab-container{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+}
+.profile-data .tab-container .tab{
+   flex: 1;
+   text-align: center;
+}
+.profile-data .tab-container .tab img{
+   width: 60px;
+}
+ /* Mark the steps that are finished and valid: */
+
+/* .ord{
+   background: var(--white);
+} */
 /* --------== single product page ==-------- */
 .all {
    width: 100%;
@@ -3412,12 +3556,12 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 /* --------== invoice page ==-------- */
-.table>:not(caption)>*>* {
+/* .table>:not(caption)>*>* {
    background: transparent;
    text-align: center;
    border-bottom: 1px solid gainsboro;
    padding: 18px 5px;
-}
+} */
 
 .ordNum,
 .ordPrice {
@@ -3704,6 +3848,9 @@ input[type=range]::-webkit-slider-thumb {
       font-size: 1.3rem;
       margin-bottom: 1rem;
    }
+   .middle-nav .phone-wrap {
+      display: none;
+   }
 }
 
 @media (max-width: 578px) {
@@ -3723,17 +3870,21 @@ input[type=range]::-webkit-slider-thumb {
    } */
 
    .middle-nav .search-box {
-      width: 98%;
+      max-width: max-content;
+      margin: unset;
+      margin-inline-start: auto;
+   }
+   .breadcrumb{
+      padding: 2rem;
+      margin-bottom: 3rem;
    }
 
-   .middle-nav .search-box button {
+   /* .middle-nav .search-box button {
       padding: 1px 22px;
       background: transparent;
-   }
+   } */
 
-   .middle-nav .phone-wrap {
-      display: none;
-   }
+   
 
    .banner-slider .single-slider {
       display: flex;
@@ -3810,10 +3961,15 @@ input[type=range]::-webkit-slider-thumb {
       top: 0;
       right: 0;
       height: 100%;
-      border-radius: 0;
+      border-radius: 12px 0 0 12px;
       transition: 0.3s;
       background: white;
-   }
+      box-shadow: -1px 2px 17px 3px #02c4b224;
+      -webkit-border-radius: 12px 0 0 12px;
+      -moz-border-radius: 12px 0 0 12px;
+      -ms-border-radius: 12px 0 0 12px;
+      -o-border-radius: 12px 0 0 12px;
+}
 
    .filter.filter-toggle,
    .profile-nav.Pnav-toggle {
