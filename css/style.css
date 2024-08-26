@@ -3768,6 +3768,9 @@ input[type=range]::-webkit-slider-thumb {
       font-size: 46px;
    }
 
+   .middle-nav .search-box {
+      max-width: 55%;
+   }  
 }
 
 @media (max-width: 768px) {
@@ -3782,10 +3785,6 @@ input[type=range]::-webkit-slider-thumb {
    .discover-info h3 {
       font-size: 1.3rem;
       margin-bottom: 1rem;
-   }
-
-   .middle-nav .phone-wrap {
-      display: none;
    }
 
    #scroll-top {
@@ -3815,6 +3814,9 @@ input[type=range]::-webkit-slider-thumb {
       margin-inline-start: 10px;
    }
 
+   .middle-nav .phone-wrap {
+      display: none;
+   }
    .breadcrumb {
       padding: 2rem;
       margin-bottom: 3rem;
