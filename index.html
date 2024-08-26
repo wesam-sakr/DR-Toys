@@ -37,7 +37,7 @@
   <!-- ==== end float whatsapp icon ==== -->
 
   <!-- ==== start Button trigger login modal ==== -->
-  <button type="button" id="float" style="bottom: 100px;" class="btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <button type="button" id="float" style="bottom: 100px;" class="btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
     <i class="bi bi-person-circle"></i>
   </button>
   <!-- ==== end Button trigger login modal ==== -->
@@ -274,10 +274,10 @@
   <!-- ==== end header ==== -->
 
   <!-- ==== start filter by age ==== -->
-  <section class="age py-5">
+  <section class="age py-4 py-md-5">
     <div class="container-lg">
       <h5 class="title">تصفح حسب العمر</h5>
-      <div class="row justify-content-center row-cols-3 row-cols-lg-5">
+      <div class="row justify-content-center row-cols-3 row-cols-md-4 row-cols-lg-5">
         <div class="col">
           <div class="woo-tag-item bottomtotop">
             <div class="rt-tag-content">
@@ -382,7 +382,7 @@
         </div>
         <a href="products.html">المزيد <i class="fa-solid fa-chevron-left"></i></a>
       </div>
-      <div class="row gy-4 row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-4">
+      <div class="row gy-4 row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-4">
         <div class="col">
           <div class="product">
             <div class="card">
@@ -633,11 +633,11 @@
   <!-- ==== end our products ==== -->
 
   <!-- ==== start filter by category ==== -->
-  <section class="category py-5">
+  <section class="category py-4 py-md-5">
     <div class="container-lg">
       <h5 class="title">الفئات</h5>
-      <div class="all_cats row gy-4 align-items-stretch pt-5">
-        <div class="col-lg-3 col-md-3 col-6">
+      <div class="all_cats row gy-5 align-items-stretch pt-5">
+        <div class="col-lg-3 col-md-4 col-6">
           <div class="cat cat_bg">
             <a href="" class="link"></a>
             <div class="box">
@@ -646,7 +646,7 @@
             <p>ألعاب المحرکات</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-6">
+        <div class="col-lg-3 col-md-4 col-6">
           <div class="cat cat_bg">
             <a href="" class="link"></a>
             <div class="box">
@@ -655,7 +655,7 @@
             <p>إستشارات فی تنمیة المهارات</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-6">
+        <div class="col-lg-3 col-md-4 col-6">
           <div class="cat cat_bg">
             <a href="" class="link"></a>
             <div class="box">
@@ -664,7 +664,7 @@
             <p>ألعاب تنمیة المهارات</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-6">
+        <div class="col-lg-3 col-md-4 col-6">
           <div class="cat cat_bg">
             <a href="" class="link"></a>
             <div class="box">
@@ -679,7 +679,7 @@
   <!-- ==== end filter by category ==== -->
 
   <!-- ==== start image banner ==== -->
-  <section class="banner py-5">
+  <section class="banner py-4 py-md-5">
     <div class="container-lg">
       <div class="discover position-relative">
         <a href="" class="link"></a>
@@ -1148,7 +1148,7 @@
   <!-- ==== end footer ==== -->
 
   <!-- ==== start login modal ==== -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-labelledby="exampleModalToggleLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-body">
@@ -1159,7 +1159,7 @@
                 <p class="mb-4">كن جزء من عالمنا</p>
                 <form action="">
                   <div class="form-group mb-3">
-                    <input type="text" class="form-control" placeholder="البريد الالكتروني">
+                    <input type="email" class="form-control" placeholder="البريد الالكتروني">
                   </div>
                   <div class="form-group mb-3">
                     <input type="text" class="form-control" placeholder="كلمة السر">
@@ -1167,7 +1167,7 @@
                 </form>
                 <p>
                   <span>ليس لديك حساب ؟</span>
-                  <a href="" style="color: var(--blue);">انشاء حساب</a>
+                  <a href="" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" style="color: var(--blue);">انشاء حساب</a>
                 </p>
                 <div class="d-flex align-items-center mt-4 gap-2">
                   <button type="button" class="btn main-btn">التسجيل</button>
@@ -1184,6 +1184,59 @@
     </div>
   </div>
   <!-- ==== end login modal ==== -->
+
+  <!-- ==== start register modal ==== -->
+  <div class="modal fade" id="exampleModalToggle2" tabindex="-1" aria-labelledby="exampleModalToggleLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row gx-0 align-items-center">
+            <div class="col-6">
+              <div class="login-data">
+                <h4 class="mb-2 fw-bold" style="color: var(--red);">سجل معنا</h4>
+                <p class="mb-4">كن جزء من عالمنا</p>
+                <form action="">
+                  <div class="row gx-2">
+                    <div class="col-lg-6">
+                      <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder=" الاسم الاول">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="الاسم الاخير">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-3">
+                    <input type="email" class="form-control" placeholder="البريد الالكتروني">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="رقم الهاتف">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="كلمة السر">
+                  </div>
+                </form>
+                <p>
+                  <span>هل لديك حساب ؟</span>
+                  <a href="" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" style="color: var(--blue);">تسجيل الدخول</a>
+                </p>
+                <div class="d-flex align-items-center mt-4 gap-2">
+                  <button type="button" class="btn main-btn">التسجيل</button>
+                  <button type="button" class="btn main-outline-btn" data-bs-dismiss="modal">اغلاق</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <img class="login-img" src="images/mobile BG.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==== end register modal ==== -->
 
   <!-- ==== start rate site ==== -->
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
