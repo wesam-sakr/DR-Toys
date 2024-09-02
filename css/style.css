@@ -1001,23 +1001,11 @@ textarea {
    margin-bottom: 20px;
    line-height: 1.1;
 }
-.banner-slider .animation .single-slide.swiper-slide-active .slider-title {
-   transform: translateY(0);
-   transition-delay: .6s;
-   opacity: 1;
-   visibility: visible;
-}
 .banner-slider .slider-content .slider-text {
    color: var(--white);
    font-size: 16px;
    line-height: 1.6;
    margin-bottom: 30px;
-}
-.banner-slider .animation .single-slide.swiper-slide-active .slider-text {
-   transform: translateY(0);
-   transition-delay: .9s;
-   opacity: 1;
-   visibility: visible;
 }
 a.button-style-4 {
    position: relative;
@@ -2219,10 +2207,14 @@ a.quantity:hover {
 .team .card {
    border-bottom: 4px solid var(--color) !important;
 }
-.team .card svg,
-.team .card .card-footer p {
+.team .card .card-footer svg,
+.team .card .card-footer svg *,
+.team .card .card-footer h6 {
    fill: var(--color);
    color: var(--color);
+}
+.team .card .card-footer svg {
+   width: 30px;
 }
 .team .card img {
    aspect-ratio: 1 / 1;
@@ -2257,10 +2249,13 @@ a.quantity:hover {
 .team .card .card-footer {
    background-color: #fff;
    border: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
-.team .card-body p {
+/* .team .card-body h5 {
    color: #4B5563;
-}
+} */
 .team .card-shape {
    position: relative;
    overflow: hidden;
