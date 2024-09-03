@@ -283,7 +283,7 @@ html[dir='ltr'] [class*='fa-chevron'] {
    animation: animloader 1s ease-out infinite alternate;
 }
 /* -------- icon hover animation  -------- */
-:not(.input-group, .quantity, .fav):has(i):hover>i {
+:not(.input-group, .quantity, .fav ,.bookmark):has(i):hover>i {
    animation: toBottomFromTop .5s forwards;
    -webkit-animation: toBottomFromTop .5s forwards;
 }
@@ -1228,24 +1228,20 @@ html[dir="ltr"] .sold_out{
    position: relative;
    margin-top: .85rem;
    /* margin-bottom: -36px; */
-   border-radius: 140px !important;
-   background-color: var(--red) !important;
+   border: 0;
    padding: 0 !important;
    z-index: 3;
-   -webkit-border-radius: 140px !important;
-   -moz-border-radius: 140px !important;
-   -ms-border-radius: 140px !important;
-   -o-border-radius: 140px !important;
+   background: transparent;
 }
-.product .card-footer:hover {
-   background-color: var(--sky) !important;
-}
-.product .card:has(.sold_out) .card-footer{
+
+.product .card:has(.sold_out) .card-footer a,
+.product .card:has(.sold_out) .card-footer button{
    background-color: rgb(194, 194, 194) !important;
 }
 .product .card-footer button,
 .product .card-footer a {
-   background-color: transparent;
+   border-radius: 140px !important;
+   background-color: var(--red) !important;
    color: #fff;
    display: flex;
    align-items: center;
@@ -1253,6 +1249,10 @@ html[dir="ltr"] .sold_out{
    gap: 5px;
    width: 100%;
    padding: 6px;
+}
+.product .card-footer button:hover,
+.product .card-footer a:hover{
+   background-color: var(--sky) !important;
 }
 /* -------- suggest products -------- */
 .suggest .title-link {
@@ -1977,6 +1977,54 @@ a.quantity:hover {
    -moz-border-radius: 15px;
    -ms-border-radius: 15px;
    -o-border-radius: 15px;
+}
+
+/* --------== courses page ==-------- */
+.courses .product .card{
+   text-align: start;
+}
+.courses .product .card .card-img-top {
+   margin-bottom: .5rem;
+   border-radius: 12px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   -ms-border-radius: 12px;
+   -o-border-radius: 12px;
+}
+.courses .product .card .card-img-top img{
+   aspect-ratio: 5 / 3;
+}
+.courses .product .card .discount {
+   border-radius: 0px 12px 0px 12px !important;
+   -webkit-border-radius: 0px 12px 0px 12px !important;
+   -moz-border-radius: 0px 12px 0px 12px !important;
+   -ms-border-radius: 0px 12px 0px 12px !important;
+   -o-border-radius: 0px 12px 0px 12px !important;
+}
+.bookmark{
+   color: var(--red);
+   background: transparent;
+   font-size: 18px;
+   z-index: 9;
+}
+.courses .desc{
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: normal;
+   /* margin-bottom: .5rem; */
+}
+.courses .product .card-footer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.courses .product .card-footer button,
+.courses .product .card-footer a {
+   width: auto;
+   padding: 6px 20px;
 }
 
 /* --------== contact page ==-------- */

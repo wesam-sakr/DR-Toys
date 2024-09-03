@@ -20,6 +20,9 @@ $(document).ready(function () {
   $(".fav").click(function () {
     $(this).children(".fa-heart").toggleClass('fa-regular').toggleClass('fa-solid');
   });
+  $(".bookmark").click(function () {
+    $(this).children(".fa-bookmark").toggleClass('fa-regular').toggleClass('fa-solid');
+  });
 
   $('.toggleFav').click(function () {
     $(this).toggleClass('added')
